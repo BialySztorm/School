@@ -1,0 +1,1 @@
+w polu style jesli się wpisze wartość 1 to styl kolejnej strony będzie inny

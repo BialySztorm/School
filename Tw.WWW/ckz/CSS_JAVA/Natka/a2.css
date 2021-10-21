@@ -1,0 +1,5 @@
+#tak {list-style-type: upper-alpha;
+padding: 20px;
+}
+#nie {list-style-image: url(prezent.png);
+list-style-position: inside;}

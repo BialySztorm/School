@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='stylesheet' href='../css/style.css'>
+    <link rel='stylesheet' href='../css/kalkulator.css'>
+</head>
+<body>
+    <div>Kalkulator V2.1</div>
+    <div>by Andrzej Manderla</div>
+    <table>
+        <tr>
+            <td colspan="4" id="textarea2"><textarea id="textarea1" readonly></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick='wypisz("C")'>C</button></td>
+            <td><button onclick='wypisz("del")'><-</button></td>
+            <td><button onclick='wypisz(" / ")'>/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick='wypisz("7")'>7</button></td>
+            <td><button onclick='wypisz("8")'>8</button></td>
+            <td><button onclick='wypisz("9")'>9</button></td>
+            <td><button onclick='wypisz(" * ")'>*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick='wypisz("4")'>4</button></td>
+            <td><button onclick='wypisz("5")'>5</button></td>
+            <td><button onclick='wypisz("6")'>6</button></td>
+            <td><button onclick='wypisz(" - ")'>-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick='wypisz("1")'>1</button></td>
+            <td><button onclick='wypisz("2")'>2</button></td>
+            <td><button onclick='wypisz("3")'>3</button></td>
+            <td><button onclick='wypisz(" + ")'>+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick='wypisz(".")'>.</button></td>
+            <td><button onclick='wypisz("0")'>0</button></td>
+            <td colspan="2"><button onclick="wynik()" id="submit">=</button></td>
+        </tr>
+    </table>
+    <script charset="UTF-8" src="../js/10-Kalkulator.js"></script>
+</body>
+</html>

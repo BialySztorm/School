@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Jak działa procesor</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../Grafika/procesor.png">
+</head>
+
+<body>
+    <div class="calosc">
+        <div class="naglowek">
+            Składamy komputer. Jak działa procesor? Wyjaśniamy zasady, obalamy mity.</div>
+
+        <div>
+            Która z części komputera jest najważniejsza? Wszystkie razem tworzą jedną, spójną całość, ale jeżeli mielibyśmy wybrać tę, która będzie pełnić rolę lidera – będzie nią CPU (Central Processing Unit – Centralna Jednostka Przetwarzająca), albo jak kto woli – procesor. To on jest mózgiem komputera, ogromnie upraszczając – zarządza danymi i wykonuje na nich obliczenia, dzięki czemu tak naprawdę PC jest w stanie wykonywać tak skomplikowane operacje.
+        </div>
+        <center><a href="../index.html"><img class="powrot" src="../grafika/baner.png"></a>
+            <div class="powrotp">
+                Aby powrócić kliknij baner.
+            </div>
+        </center>
+        <br><br>
+        <div class="naglowek">
+            O zasadach działania słów kilka.</div>
+
+        <div>
+            Choć mogłoby się wydawać, że CPU jest niesamowicie inteligentnym urządzeniem, to w zasadzie rozróżnia tylko dwa znaki – 0 i 1, a raczej dwa stany – sygnał i brak sygnału. Obliczenia wykonywane są poprzez przepuszczenie takiego sygnału elektrycznego przez szereg układów i bramek logicznych. Pojedyncza porcja danych przetwarzanych przez procesor składa się z ciągu 64 takich zer lub jedynek, dlatego też mówimy, że dzisiejsze CPU zbudowane są w architekturze 64 bitowej. W dużym uproszczeniu procesor składa się z układu wykonującego polecenia zwane rozkazami, układu sterującego tymi poleceniami, zestawu rejestrów służących do przechowywania tymczasowych danych oraz układów wspomagających działanie całości. Bardziej skomplikowane operacje wykonuje się poprzez wykonanie zestawu prostych rozkazów. Każdy procesor ma zestaw rozkazów oraz sposób ich egzekwowania określony przez producenta. Aby jednak stany procesora mogły się zmieniać, a co za tym idzie – wykonywać rozkazy, potrzebny jest zegar, którego prędkość jest określana w Hercach (Hz). Szybkość taktowania zegara definiuje jak często zmienia się stan CPU, a co za tym idzie – ile operacji wykona się w czasie jednej sekundy (więcej = lepiej).
+            <br><br>
+            Obecnie standardem są procesory wielordzeniowe. Co to znaczy? Otóż są to urządzenia tak naprawdę składające się z kilku procesorów w jednym, komunikujące się między sobą. Dzięki takiemu zastosowaniu można było zwiększyć ilość operacji wykonywanych równolegle, co drastycznie zwiększyło możliwości produkowanych CPU. Na podobnej zasadzie opiera się hyper-threading, który polega na tym, że do jednego procesora (lub rdzenia) fizycznego (takiego, który istnieje fizycznie, jako sprzęt) przypisane zostają dwa rdzenie logiczne (wirtualne). Ta technologia wymaga wsparcia systemu operacyjnego obsługującego ją, ale pozwala na zwiększenie szybkości wykonywania operacji dzięki rozłożeniu ich na dwa rdzenie logiczne. Przeglądając sklepy internetowe w poszukiwaniu procesora możemy natknąć się na rubryczkę z informacją o ilości rdzeni i wątków. Wątki są właśnie rdzeniami logicznymi. CPU posiadający tylko dwa rdzenie, ale cztery wątki w większości zastosowań będzie zachowywał się jak procesor czterordzeniowy. Choć w niektórych zastosowaniach ustąpi pola bratu z czterema rdzeniami fizycznymi.
+        </div>
+        <center><img src="../grafika/procesor2.png"></center>
+
+        <div class="naglowek">
+            4 x 3 = 12?
+
+        </div>
+        <div>
+            Konsekwencją uboczną wprowadzenia wielordzeniowości był jednak mit o tym, że zegar procesora należy mnożyć przez każdy jego rdzeń. Na większości aukcji dawało się przeczytać slogany mówiące o niesamowitej mocy sięgającej dwunastu gigaherców. Otóż jest to jedna z większych bzdur jakie kiedykolwiek ktokolwiek powiedział, nie mająca niczego wspólnego z zasadami działania CPU. Taktowania procesora nigdy się nie mnoży przez rdzenie, tak jak nie mnoży się mocy samochodu przez jego koła. Gdzieś kiedyś zasłyszałem bardzo trafną analogię, mówiącą, że stosunek taktowania procesora do ilości jego rdzeni można porównać do jazdy samochodami po autostradzie. Jadąc jednym samochodem przewieziemy 5 osób z prędkością 140km/h, jadąc dwoma/czterema samochodami przewieziemy tych osób 10/20, ale wszystkie auta dalej mogą jechać jedynie 140km/h, bo prędkości nie mnożą się przez ilość pojazdów. Mimo upływu czasu wciąż zdarza mi się zauważyć sprzedawców zarzekających, że ich produkty taktowane są dwucyfrowymi wartościami. Jest to zwyczajne oszustwo wynikające z niewiedzy sprzedającego, albo co gorsza celowego działania.
+
+        </div>
+        <br>
+        <br>
+        <div class="naglowek">
+            Wszędzie te gigaherce.</div>
+
+        <div>
+            Choć to o czym pisałem wyżej może wydawać się technologicznym bełkotem, tak naprawdę powinno dać chociaż ułamek wyobrażenia o tym jak skomplikowanym i złożonym urządzeniem jest procesor. Dlaczego więc w różnych reklamach popularnych sieci mających w ofercie sprzęt komputerowy słyszymy jedynie głośne hasło: „procesor intel/amd, 3 gigaherce!!!”? Co z pozostałymi parametrami? Czy naprawdę zegar jest wszystkim co wpływa na wydajność procesora? Odpowiedź brzmi: nie. Choć zegar faktycznie jest ważny i ma największy wpływ na szybkość CPU, to również inne czynniki wchodzą tutaj w grę, takie jak ilość rdzeni, co jest dość oczywiste. Nie bez znaczenia jest rozmiar dostępnej pamięci podręcznej (cache), które są bardzo szybkie i ułatwiają przechowywanie, jak sama nazwa wskazuje, podręcznych danych. Im większa jest tym rzadziej procesor musi odwoływać się do pamięci wolniejszych, co zawsze powoduje spadek wydajności. Wpływ na szybkość mają również technologie zastosowane przy produkcji, takie jak wspomniany wyżej Hyper-Threading. Bardzo ważna też jest sama architektura CPU, to w jaki sposób zostało zaprojektowanie przetwarzanie danych. Dla przykładu: procesor i5 4430 jest kilkukrotnie szybszy od swojego dziadka, Pentiuma 4 HT, pomimo posiadania identycznie taktowanego zegara o prędkości 3.0GHz. Dlaczego? Pomijając już sam fakt posiadania większej ilości rdzeni: mimo zegara ‚tykającego’ z taką samą prędkością, nowy procesor jest w stanie wykonać kilkukrotnie więcej operacji w czasie jednego ‚tyknięcia’ od starszego. Częstotliwości zegarów ostatnimi czasy przestały rosnąć, a wydajność nadal idzie do przodu. Dlatego bardzo często procesory nowsze o jedną generację są odrobinkę szybsze od starszych braci, pomimo identycznych taktowań. To samo tyczy się porównywania procesorów różnych producentów. Można jednak z całą pewnością przyjąć, że porównując dwa procesory z tej samej rodziny i tej samej generacji ten z wyżej taktowanym zegarem będzie szybszy.
+        </div>
+        <center><img src="../grafika/procesor3.png"></center>
+        <div class="Okienko">
+
+            <div class="naglowek1">
+                1.Procesor
+            </div>
+
+            <img class="obrazek" src="../grafika/procesor1.png">
+
+            <div class="menu">
+
+                <a href="jak_dziala_procesor.html">Jak działa procesor? Wyjaśniamy zasady, obalamy mity </a>
+                <br>
+                <a href="jak_dobrac_procesor.html">Jak dobrać procesor? </a>
+                <br>
+                <a href="oznaczenia_procesorow.html">Oznaczenia procesorów</a>
+                <br>
+                <a href="grafika_zintegrowana.html">Grafika zintegrowana </a>
+                <br>
+                <a href="montaz_procesora.html">Montaż procesora (na podstawie CPU firmy Intel)</a>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

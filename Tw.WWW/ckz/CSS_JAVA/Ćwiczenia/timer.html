@@ -1,0 +1,38 @@
+<head>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="window.setTimeout('getSecs()',1)" class="timer">
+        <script>
+
+                startday = new Date();
+                clockStart = startday.getTime();
+                var minutes = 0;
+                function initStopwatch() {
+                        var myTime = new Date();
+                        var timeNow = myTime.getTime();
+                        var timeDiff = timeNow - clockStart;
+                        this.diffSecs = timeDiff / 1000;
+                        return (this.diffSecs);
+                }
+                function getSecs() {
+                        var mySecs = initStopwatch();
+                        var mySecs1 = "" + mySecs;
+                        mySecs1 = mySecs1.substring(0, mySecs1.indexOf("."));
+                        mySecs1 -=minutes*60
+                        if(minutes>0)
+                                document.timer.mins.value = minutes+"min"
+                        document.timer.secs.value = mySecs1+"s"
+                        if(!(mySecs1%60)&&mySecs1>0)
+                        {
+                                minutes++
+                        }
+                        window.setTimeout('getSecs()', 1000);
+                }
+
+        </script>
+        <form name="timer">
+                <input name=mins>
+                <input name=secs>
+        </form>
+</body>

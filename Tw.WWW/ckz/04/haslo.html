@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Miernik jakości hasła</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Sprawdź swoje hasło</a></h1>
+    </header>
+    <section>
+        <aside>
+            <h2>Wybierz</h2>
+            <ol>
+                <li><a href="haslo.html">Sprawdź hasło</a></li>
+                <li><a href="zasady.html">Zasady tworzenia hasła</a></li>
+            </ol>
+        </aside>
+        <aside>
+            <p>Twoje hasło:<input type="password" id="haslo"><input type="button" id="guzik" value="Sprawdź"></p>
+            <p id="wynik"></p>
+        </aside>
+    </section>
+    <footer>
+        <h3>Miernik jakości hasła</h3>
+        <p>Stronę opracował: Andrzej Manderla</p>
+    </footer>
+
+
+    <script>
+        var haslo_id = document.getElementById("haslo");
+        var guzik = document.getElementById("guzik");
+        var wynik = document.getElementById("wynik");
+
+        function checkPasswd() {
+            var haslo = haslo_id.value
+            var isNum = 0;
+            if (haslo.length == 0)
+            {
+                wynik.innerHTML = "WPISZ HASŁO!";
+                wynik.style.color = "red";
+            }
+            else {
+                if (haslo.length >= 4)
+                    for (i = 0; i < haslo.length; i++) {
+                        if (!isNaN(haslo[i])) {
+                            isNum = 1;
+                            if (haslo.length >= 7) {
+                                wynik.innerHTML = "dobre";
+                                wynik.style.color = "green";
+                            }
+                            else {
+                                wynik.innerHTML = "średnie";
+                                wynik.style.color = "blue";
+                            }
+                            break;
+                        }
+                    }
+                if (!isNum) {
+                    wynik.innerHTML = "słabe";
+                    wynik.style.color = "yellow";
+                }
+            }
+        }
+
+        guzik.onclick = checkPasswd;
+    </script>
+</body>
+
+</html>

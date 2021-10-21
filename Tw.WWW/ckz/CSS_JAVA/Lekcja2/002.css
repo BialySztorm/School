@@ -1,0 +1,267 @@
+#kolo {
+    list-style-type: disc;
+}
+
+#okrag {
+    list-style-type: circle;
+}
+
+#kwadrat {
+    list-style-type: square;
+}
+
+#liczbya {
+    list-style-type: decimal;
+}
+
+#malel {
+    list-style-type: lower-alpha;
+}
+
+#duzel {
+    list-style-type: upper-alpha;
+}
+
+#duzelrz {
+    list-style-type: upper-roman;
+}
+
+#malelrz {
+    list-style-type: lower-roman;
+}
+
+#brak {
+    list-style-type: none;
+}
+
+#zewn {
+    list-style-position: outside;
+}
+
+#wewn {
+    list-style-position: inside;
+}
+
+#obrazek {
+    list-style-image: url(camel.svg);
+    background-color: azure;
+    color:black;
+}
+
+/*
+ATRYBUTY MIESZANE
+list-style
+
+li{
+    list-style:disc inside;
+}
+
+ODSTĘP WYRÓŻNIKA
+marker-offset
+
+li:before{
+    display: marker;
+    marker-offset: 10px;
+}
+lub 
+ul, li{
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    background: url(marker.gif) no-repeat left top;
+    padding-left: 20px;
+}
+
+AUTOMATYCZNA NUMERACJA
+ol{
+    counter-reset: nazwa_licznika;
+}
+ol li{
+    list-style-type: none;
+}
+ol li:before {
+    content: counters(nazwa_licznika, ".");
+    counter-increment: nazwa_licznika;
+}*/
+
+/* ol {
+    counter-reset: licznik1 licznik2
+}
+
+ol li {
+    counter-increment: licznik1 licznik2
+}
+
+ol {
+    counter-reset: licznik 3
+}
+
+ol li {
+    list-style-type: none
+}
+
+ol li:before {
+    content: counters(licznik, ".") ". ";
+    counter-increment: licznik -1
+}
+
+ol {
+    counter-reset: licznik1 licznik2 3
+}
+
+ol li {
+    counter-increment: licznik1 licznik2 -1
+} */
+
+/**/
+
+/* body {
+    counter-reset: h1
+}
+
+h1 {
+    counter-reset: h2
+}
+
+h1:before {
+    content: counter(h1) ". ";
+    counter-increment: h1
+}
+
+h2 {
+    counter-reset: h3
+}
+
+h2:before {
+    content: counter(h1) "." counter(h2) ". ";
+    counter-increment: h2
+}
+
+h3 {
+    counter-reset: h4
+}
+
+h3:before {
+    content: counter(h1) "." counter(h2) "." counter(h3) ". ";
+    counter-increment: h3
+}
+
+h4 {
+    counter-reset: h5
+}
+
+h4:before {
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";
+    counter-increment: h4
+}
+
+h5 {
+    counter-reset: h6
+}
+
+h5:before {
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+    counter-increment: h5
+}
+
+h6:before {
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
+    counter-increment: h6
+} */
+
+/**/
+
+ol {
+    counter-reset: upper_alpha
+}
+
+ol li {
+    list-style-type: none
+}
+
+ol li:before {
+    content: counters(upper_alpha, ".", upper-alpha) ") ";
+    counter-increment: upper_alpha
+}
+
+/**/
+
+/* body {
+    counter-reset: h1
+}
+
+h1 {
+    counter-reset: h2
+}
+
+h1:before {
+    content: counter(h1, upper-roman) ". ";
+    counter-increment: h1
+}
+
+h2 {
+    counter-reset: h3
+}
+
+h2:before {
+    content: counter(h1, upper-roman) "." counter(h2, lower-roman) ". ";
+    counter-increment: h2
+}
+
+h3 {
+    counter-reset: h4
+}
+
+h3:before {
+    content: counter(h1, upper-roman) "." counter(h2, lower-roman) "." counter(h3, decimal) ". ";
+    counter-increment: h3
+}
+
+h4 {
+    counter-reset: h5
+}
+
+h4:before {
+    content: counter(h1, upper-roman) "." counter(h2, lower-roman) "." counter(h3, decimal) "." counter(h4, upper-alpha) ". ";
+    counter-increment: h4
+}
+
+h5 {
+    counter-reset: h6
+}
+
+h5:before {
+    content: counter(h1, upper-roman) "." counter(h2, lower-roman) "." counter(h3, decimal) "." counter(h4, upper-alpha) "." counter(h5, lower-alpha) ". ";
+    counter-increment: h5
+}
+
+h6:before {
+    content: counter(h1, upper-roman) "." counter(h2, lower-roman) "." counter(h3, decimal) "." counter(h4, upper-alpha) "." counter(h5, lower-alpha) "." counter(h6, lower-greek) ". ";
+    counter-increment: h6
+} */
+/**/
+ul {
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+}
+
+ol {
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+}
+
+span {
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: red;
+    width: 100%;
+}

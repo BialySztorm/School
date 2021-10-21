@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+div{
+    border: 5px #aeaeae ridge;
+    margin: 20px;
+    background-color: #eaeaea;
+    color:#606060;
+}
+body{
+    background-color:black;
+    font-family: 'Kaushan Script', cursive;
+    font-size:3vh
+}
+a{
+    text-decoration: none;
+}

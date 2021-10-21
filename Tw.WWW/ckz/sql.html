@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">  
+    <style>
+     p
+        {
+            border:solid 2px;
+           
+         font-size:40px; 
+             color:black;
+            font-weight: 900;
+        }
+        
+   
+     .odpowiedz
+        {
+         color:white; 
+          border:solid 2px red;  
+        }
+        
+    .odpowiedz:hover
+        {
+         color:red;    
+        }
+        
+    </style>
+</head>
+    <body>
+    <p class="pytanie">
+     1. Wyświetl bazy danych   
+    </p>
+     <p class="odpowiedz">
+      show databases   
+    </p> 
+          <p class="pytanie">
+     2. Załóż bazę firma   
+    </p>
+     <p class="odpowiedz">
+      create database firma   
+    </p>
+          <p class="pytanie">
+       3.Załóż tabelę pracownicy w bazie firma 
+    </p>
+     <p class="odpowiedz">
+      create table firma.pracownicy 
+(id int AUTO_INCREMENT primary key, nazwisko varchar(20) not null,imie varchar(20) not null,
+ wyksztalcenie varchar(20) not null, placa_brutto int not null, dzial varchar(20) not null)
+   
+    </p>
+          <p class="pytanie">
+    4.Załóż użytkownika zarzadca z haslem qwerty    
+    </p>
+     <p class="odpowiedz">
+     create user zarzadca@localhost  identified by "qwerty"    
+    </p>
+          <p class="pytanie">
+     5. Pokaż uprawnienia dla zarzadca@localhost   
+    </p>
+     <p class="odpowiedz">
+      show grants for zarzadca@localhost   
+    </p>
+          <p class="pytanie">
+      6. Nadaj uprawnienia  select,delete,update,insert dla zarzadca@localhost do  tabeli pracownicy bazy firma a następnie pokaż nadane uprawnienia   
+    </p>
+     <p class="odpowiedz">
+      grant select,delete,update,insert on firma.pracownicy to zarzadca@localhost
+     <br>show grants for zarzadca@localhost
+   
+    </p>
+          <p class="pytanie">
+       7. Nadaj uprawnienia select,delete,update,insert dla zarzadca@localhost do wszystkich  tabel bazy firma , , a następnie pokaż nadane uprawnienia    
+    </p>
+     <p class="odpowiedz">
+       grant select,delete,update,insert on firma.* to zarzadca@localhost
+<br>show grants for zarzadca@localhost
+  
+    </p>
+          <p class="pytanie">
+        8.Usun wszystkie uprawnienia dla zarzadca@localhost
+    </p>
+     <p class="odpowiedz">
+     REVOKE ALL PRIVILEGES ON firma.* FROM zarzadca@localhost    
+    </p>
+          <p class="pytanie">
+      9.Nadaj  wszystkie uprawnienia dla zarzadca@localhost do wszystkich baz i tabel  
+    </p>
+     <p class="odpowiedz">
+       GRANT ALL PRIVILEGES ON *.* to zarzadca@localhost;  
+    </p>
+          <p class="pytanie">
+      10. Wypełnij rekordy tabeli pracownicy  
+    </p>
+     <p class="odpowiedz">
+      a)insert INTO firma.pracownicy (id,nazwisko,imie,wyksztalcenie,placa_brutto,dzial) VALUES(null,"Kowalski","Jan","wyzsze","200","administracja")
+         <br><br>
+b)insert INTO firma.pracownicy (id,nazwisko,imie,wyksztalcenie,placa_brutto,dzial) VALUES(null,"Kowalska","Ewa","podstawowe","2200","kontrola_jakoosci"),(null,"Kozik","Janusz","wyzsze","4200","administracja"),(null,"Bodnar","Janina","srednie","2400","produkcja")
+         <br><br>
+c)insert INTO firma.pracownicy VALUES(null,"Czoch","Ewa","podstawowe","2300","kontrola_jakoosci"),(null,"Mozik","Ewa","wyzsze","4300","administracja"),(null,"Dudek","Andrzej","srednie","2600","produkcja"),(null,"Daszek","Andrzej","srednie","2600","produkcja")
+   
+    </p>
+          <p class="pytanie">
+        11.a) wyświetl wszystkich pracowników bazy firma z tabeli pracownicy
+    </p>
+     <p class="odpowiedz">
+       select * from firma.pracownicy  
+    </p>
+          <p class="pytanie">
+       b) Wyświetl liczbę zatrudnionych w firmie pracowników 
+    </p>
+     <p class="odpowiedz">
+     SELECT count(imie) as ilosc_pracownikow from firma.pracownicy    
+    </p>
+          <p class="pytanie">
+        c) Wyświetl ilość zatrudnionych pracowników w firmie według wykształcenia
+    </p>
+     <p class="odpowiedz">
+       SELECT pracownicy.wyksztalcenie,count(imie) as ilosc_pracownikow from firma.pracownicy group by pracownicy.wyksztalcenie  
+    </p>
+          <p class="pytanie">
+       d) wyswietl imiona, nazwiska i wyksztalcenie pracownikow , uporzadkuj według nazwiska 
+    </p>
+     <p class="odpowiedz">
+      SELECT pracownicy.imie, pracownicy.nazwisko,pracownicy.wyksztalcenie  from firma.pracownicy order by pracownicy.nazwisko   
+    </p>
+          <p class="pytanie">
+        e)wyświetl średnią zarobków pracowników według działów zatrudnienia.
+    </p>
+     <p class="odpowiedz">
+     SELECT firma.pracownicy.dzial,avg(firma.pracownicy.placa_brutto)as średnia_zarobków from firma.pracownicy group by dzial    
+    </p>
+          <p class="pytanie">
+      12.Usun rekord z pracownikiem o id 8 (4 in)  
+    </p>
+     <p class="odpowiedz">
+       delete from pracownicy where id=8  
+    </p>
+          <p class="pytanie">
+      13. Dodaj do tabeli pracownicy kolumnę staz_pracy   
+    </p>
+     <p class="odpowiedz">
+      alter table firma.pracownicy add staz_pracy int   
+    </p>
+          <p class="pytanie">
+      14.  Usuń z tabeli pracownicy kolumnę staz_pracy  
+    </p>
+     <p class="odpowiedz">
+         alter table firma.pracownicy drop  staz_pracy
+    </p>
+    
+     <p class="pytanie">
+       15. Zmien nazwę kolumny staż pracy na staz  
+    </p>
+     <p class="odpowiedz">
+      alter table firma.pracownicy change pracownicy.staz_pracy pracownicy.staz int   
+    </p>  
+         <p class="pytanie">
+      16. Zmien typ pola staz na int(5)   
+    </p>
+     <p class="odpowiedz">
+        alter table firma.pracownicy change  staz staz int(5) 
+    </p> 
+         <p class="pytanie">
+       17. Zmien wartość pola staz  na 5  
+    </p>
+     <p class="odpowiedz">
+       update firma.pracownicy set staz=5  
+    </p> 
+         <p class="pytanie">
+        17. Zmien wartość pola staz  na 10 wszystkim pracownikom z wyksztalceniem wyzszym 
+    </p>
+     <p class="odpowiedz">
+      update firma.pracownicy set staz=10 where pracownicy.wyksztalcenie="wyzsze"   
+    </p> 
+         <p class="pytanie">
+       18.Podnieść wszystkim pracownikom zarabiającym poniżej 2700 pensję o 101  
+    </p>
+  
+     <p class="odpowiedz">
+     update firma.pracownicy set staz=10 where pracownicy.wyksztalcenie="wyzsze"   
+    </p> 
+        
+    <p class="pytanie">
+     19.Podnieść wszystkim pracownikom zarabiającym poniżej 2700 pensję o 101
+    </p>
+  
+     <p class="odpowiedz">
+   update firma.pracownicy set placa_brutto=placa_brutto+101 where placa_brutto<2700  
+    </p>
+    <p class="pytanie">
+     20.Wyświetl maksymalną i minimalną płacę w poszczególnych działach
+    </p>
+  
+     <p class="odpowiedz">
+    select dzial as dział_pracy,min(placa_brutto) as minimalna_płaca,max(placa_brutto) as maksymalna_płaca from pracownicy group by dzial
+    </p>       
+   <p class="pytanie">
+     21.Ogranicz liczbę wyświetlanych w wyniku zapytania wierszy
+    </p>
+  
+     <p class="odpowiedz">
+    select * from pracownicy limit 3 <br>
+    wyświetli 3 pierwsze wiersze <br>
+     select * from pracownicy limit 2,3 <br> 
+     wyświetli 3 wiersze od 2 wyłącznie <br>   
+     select * from pracownicy limit 3 offset 2 <br>
+    wyświetli 3 wiersze przeskakując 2 pierwsze <br>     
+    </p>      
+     <p class="pytanie">
+     22.wyświetli rekordy z  unikatowymi wartościami z podanego pola.
+        np.  Wyświetl działy w firmie
+    </p>    
+      <p class="odpowiedz">
+       SELECT distinct dzial from pracownicy
+    </p> 
+        <p class="pytanie">
+     23.Wyświetl ilość pracowników pracujących w poszczególnych działach , wyświetlenie ogranicz do tych działów , w których liczba pracowników nie przekracza 10<br>
+    Filtrowanie w HAVING, polega na filtrowaniu całych grup rekordów
+            
+            
+    </p> 
+        <p class="odpowiedz">
+            SELECT dzial as dział_pracy, count(nazwisko) as liczba_pracowników from pracownicy group by dzial having count(nazwisko)<=10
+        </p>
+            
+      <p class="pytanie">
+     24.Wyświetl nazwisko, imię i płacę brutto  pracowników , których płaca brutto jest większa od średnie płacy
+            
+            
+    </p> 
+        <p class="odpowiedz">
+       SELECT nazwisko,imie,placa_brutto from pracownicy where placa_brutto>(select avg(placa_brutto)as średnia from pracownicy)
+        </p> 
+            
+    <p class="pytanie">
+     25.Wyświetl ilość pracowników pracujących w poszczególnych działach  z danym wykształceniem, 
+            
+            
+    </p>         
+            
+     <p class="odpowiedz">
+      SELECT wyksztalcenie, dzial as dział_pracy, count(nazwisko) as liczba_pracowników from pracownicy group by dzial,wyksztalcenie  
+        
+        </p>  
+        
+       <p class="pytanie">
+     25.Wyświetl ilość pracowników pracujących w poszczególnych działach  z wyksztalceniem wyższym 
+            
+            
+    </p>         
+            
+     <p class="odpowiedz">
+      SELECT wyksztalcenie, dzial as dział_pracy, count(nazwisko) as liczba_pracowników from pracownicy group by dzial,wyksztalcenie having wyksztalcenie='wyższe'  
+         
+         <br>
+      lub
+         <br>
+     SELECT wyksztalcenie, dzial as dział_pracy, count(nazwisko) as liczba_pracowników from pracownicy where wyksztalcenie='wyższe' group by dzial   
+        </p>
+     <p class="pytanie">
+     26.Wyświetlanie rekordów bez powtórzeń 
+    </p>    
+     <p class="odpowiedz">  
+    SELECT distinct dzial  FROM pracownicy<br>
+    SELECT distinct imie  FROM pracownicy<br> 
+    SELECT distinct wyksztalcenie,dzial FROM pracownicy
+        </p>
+     <p class="pytanie">
+     27.Wyświetl średnią zarobków brutto z tych dzialów, w których średnia zarobków  jest mniejsza od średniej zarobków w firmie
+            
+            
+    </p>    
+        
+      <p class="odpowiedz">
+        
+       select dzial,avg(placa_brutto)as średnia from pracownicy group by dzial having średnia <(select avg(placa_brutto)as średnia from pracownicy) 
+        </p>
+    </body>
+</html>
+    

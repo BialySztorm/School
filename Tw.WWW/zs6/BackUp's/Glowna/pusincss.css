@@ -1,0 +1,62 @@
+body {
+
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(252, 209, 235, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
+}
+
+.pusin1 {
+
+    border-style: none;
+    position: fixed;
+    top: 69%;
+    left: 2%;
+}
+
+
+.dymek {
+
+    border-style: none;
+    position: fixed;
+    top: 45%;
+    left: -2%;
+}
+
+
+
+.dymek2 {
+    width: 30%;
+    height: 20%;
+}
+
+div {
+    border-style: dashed;
+    border-color: purple;
+    overflow: hidden;
+    border-radius: 30px 30px 30px 30px;
+    width: 60%;
+    position: relative;
+    top:45%;
+    left: 20%;
+    font-size: 500%;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+.href {
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+
+}
+.stronki{
+    top:20px;
+    margin:20px;
+}
+.glowna{
+    position:fixed;
+}

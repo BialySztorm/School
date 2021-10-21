@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styl2.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="baner">
+        <h1>
+            Formatowanie dokumentów HTML
+        </h1>
+    </div>
+    <div id="przyklady">
+        <div id="p1">
+            <h2>
+                Przykłady listy - hobby
+            </h2>
+            <ul>
+                <li>muzyka</li>
+                <li>turystyka</li>
+                <ol>
+                    <li>góry</li>
+                    <li>jeziora</li>
+                    <li>na rowerze</li>
+                </ol>
+                <li>książki</li>
+            </ul>
+        </div>
+        <div id="p2">
+            <h2>
+                Przykład tabeli - rozkład dnia
+            </h2>
+            <table cellspacing=0>
+                <tr>
+                    <th>Pora dnia</th>
+                    <th>obowiązki</th>
+                </tr>
+                <tr>
+                    <td>rano</td>
+                    <td>nauka</td>
+                </tr>
+                <tr>
+                    <td>południe</td>
+                    <td>zajęcia dodatkowe</td>
+                </tr>
+                <tr>
+                    <td>popołudnie</td>
+                    <td rowspan="2">moje hobby</td>
+                </tr>
+                <tr>
+                    <td>wieczór</td>
+                </tr>
+            </table>
+        </div>
+        <div id="p3">
+            <img src="tekst.png">
+        </div>
+    </div>
+    <div id="skrypt">
+        <p>
+            Podaj rozmiar tekstu w procentach:
+            <input type="text" id="rozmiar">
+            %
+        </p>
+        <p>
+            <select id="pochyla">
+                <option value="unset">prosty</option>
+                <option value="italic">kursywa</option>
+            </select>
+        </p>
+        <p>
+            Jakim kolorem sformatować tekst? Wybierz
+            przycisk
+            <input type="button" id="red">
+            <input type="button" id="green">
+            <input type="button" id="blue">
+        </p>
+        <p id="paragraf">
+            To jest przykład paragrafu, który może być
+            dowolnie formatowany przez Java Script
+        </p>
+    </div>
+    <div id="stopka">
+        <p>
+            Formatowaniem tekstu zajmował się: <i>Andrzej Manderla</i>
+        </p>
+        <a href="http://formatowanie.pl">Odwiedź także</a>
+    </div>
+    <script>
+        var rozmiar = document.getElementById("rozmiar");
+        var pochyla = document.getElementById("pochyla");
+        var red = document.getElementById("red");
+        var green = document.getElementById("green");
+        var blue = document.getElementById("blue");
+        var paragraf = document.getElementById("paragraf");
+
+        function zmienRozmiar(){
+            paragraf.style.fontSize = rozmiar.value+"%";
+        }
+        function zmienPochyla(){
+            // if(pochyla.value == 1){
+            //     paragraf.style.fontStyle = "italic";
+            // }
+            // else if(pochyla.value == 0){
+            //     paragraf.style.fontStyle = "unset";
+            // }
+            paragraf.style.fontStyle = pochyla.value;
+        }
+        function zmienKolor(kolor){
+            paragraf.style.color = kolor;
+        }
+
+        rozmiar.onchange = zmienRozmiar;
+        pochyla.onchange = zmienPochyla;
+        red.onclick = function(){
+            zmienKolor("red");
+        }
+        green.onclick = function(){
+            zmienKolor("green");
+        }
+        blue.onclick = function(){
+            zmienKolor("blue");
+        }
+    </script>
+</body>
+
+</html>

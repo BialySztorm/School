@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Weselny</title>
+    <link rel="stylesheet" href="styl5.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="logo.png" height="70px">
+            <span>Dom Weselny zorganizuje wesele za Ciebie</span>
+            <img src="logo.png" height="70px">
+        </h1>
+    </header>
+    <section>
+        <div id="d1">
+            <h2>Dom Weselny</h2>
+            <p>ul. Przemysłowa 5</p>
+            <p>Kalisz</p>
+            <p><a href="logo.png">Pobierz logo</a></p>
+        </div>
+        <div id="d2">
+            <h2>Oferujemy</h2>
+            <ul>
+                <li>Wesela</li>
+                <li>Bankiety</li>
+                <li>Konferencje</li>
+            </ul>
+        </div>
+        <div id="d3">
+            <a id="regulamin" href="Regulamin.txt">czytaj regulamin</a>
+        </div>
+    </section>
+    <article>
+        <h2>Ile będzie kosztowało moje wesele?</h2>
+        <p>Podaj liczbę gości:<input type="number" id="goscie"></p>
+        <p><input type="checkbox" id="poprawiny">Wesele z poprawinami?</p>
+        <p><button id="oblicz">Oblicz koszt</button></p>
+        <p id="koszty"></p>
+    </article>
+    <footer>
+        <div>
+            Stronę opracował: Andrzej Manderla
+        </div>
+    </footer>
+    <script>
+        var goscie = document.getElementById("goscie");
+        var poprawiny = document.getElementById("poprawiny");
+        var oblicz = document.getElementById("oblicz");
+        var koszty = document.getElementById("koszty");
+
+        function obliczKoszty(){
+            var tmp = goscie.value*100;
+            if(poprawiny.checked)
+                tmp = tmp*1.3;
+            koszty.innerHTML = tmp+"zł";
+        }
+        // alert(oblicz.getAttribute("wlasny"))
+
+        oblicz.onclick = obliczKoszty;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+var a = String(prompt("Podaj tekst:"));
+document.write("<div>Tekst: " + a + " z typem " + typeof (a) + "<br>");
+var b = parseInt(a);
+document.write("Tekst przekonwetowany na liczbę całkowitą: " + b + " z typem " + typeof (b) + "<br>");
+var c = parseFloat(a);
+document.write("Tekst przekonwetowany na liczbę całkowitą: " + c + " z typem " + typeof (c) + "</div>");
+var d = parseInt(prompt("Podaj liczbę:"));
+document.write("<div>Liczba: " + d + " z typem " + typeof (d) + "<br>");
+var e = String(d);
+document.write("Liczba przekonwetowany na tekst: " + e + " z typem " + typeof (e) + "</div>");

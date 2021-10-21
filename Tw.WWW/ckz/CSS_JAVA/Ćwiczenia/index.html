@@ -1,0 +1,28 @@
+<html5>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="indexB">
+        <div id="tasks">
+            <iframe id="timer" src="timer.html"></iframe>
+            <audio controls id=audio>
+                <source id="audio1" type="audio/ogg">
+                <source id="audio2" type="audio/mpeg">
+            </audio>
+            <textarea id="task" readonly></textarea>
+            <img src="grafika/check.png" id="check" onclick="check()">
+            <img src="grafika/cofnij.png" id="cofnij" onclick="cofnij()">
+            <img src="grafika/refresh.png" class="refresh" onclick="tasksRefresh()">
+        </div>
+        <div>
+            <iframe style="margin-bottom:20px;position:absolute;top:100%;left:50%;transform: translate(-50%);" width="95%" height="600px"
+                src="https://www.youtube.com/embed/VdxDnuXj4yc?volume=0" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen id="YoutubeId"></iframe>
+        </div>
+        <script src="skrypt.js"></script>
+    </body>
+</html5>

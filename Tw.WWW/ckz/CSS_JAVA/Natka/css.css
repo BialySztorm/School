@@ -1,0 +1,39 @@
+p {
+}
+b {
+color: red;
+}
+b {
+color: red;
+}
+
+i ~ b {
+color: red;
+}
+
+p[title] {
+color: blue;
+}
+[title="tupot"] {
+color: red;
+}
+
+b#ruch {
+color: yellow;
+}
+
+b.klasa {
+color: green;
+}
+
+p:first-letter {
+color: green;
+}
+
+b:first-line {
+color: blue;
+}
+
+a:visited {
+color: red;
+}

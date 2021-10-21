@@ -1,0 +1,54 @@
+/* static */
+.div_1,.div_2{
+    width:100px;
+    height: 100px;
+}
+.div_1{
+    left:50px;
+    top:100px;
+    background-color:black;
+}
+.div_2{
+    left:100px;
+    top:200px;
+    background-color: red;
+}
+
+/* relative */
+.relatywne{
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+/* absolute */
+.p_1, .p_2{
+    position: absolute;
+} 
+.p_1{
+    left:200px;
+    top:10px;
+    border:2px solid green;
+}
+.p_2{
+    left:300px;
+    top:28px;
+    border:2px solid red;
+}
+
+/* fixed */
+.p1{
+    left:400px;
+    top:10px;
+    border:2px solid green;
+    position: absolute;
+}
+.p2{
+    left:500px;
+    top:28px;
+    border:2px solid red;
+    position:fixed
+}
+.p3{
+    top:3000px
+}

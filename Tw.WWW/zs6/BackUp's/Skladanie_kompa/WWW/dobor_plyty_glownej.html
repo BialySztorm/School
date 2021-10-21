@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dobór płyty głównej</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+    <link rel="shortcut icon" href="../Grafika/motherboard.png">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="calosc">
+        <div class="naglowek">
+            Składamy komputer. Dobór płyty głównej.</div>
+
+        <div>
+            Płyta główna (ang. motherboard) jest podstawą każdego zestawu komputerowego. Jest swoistym szkieletem PC, gdyż to w niej montuje się wszystkie podzespoły, jej zadaniem jest zapewnienie prawidłowego działania i współpracy wszystkich części. Choć nie ma ona tak bezpośredniego wpływu na wydajność jak procesor albo karta graficzna w przypadku gier, to również jest elementem, nad którym trzeba się odpowiednio zastanowić w przypadku składania komputera. Istnieje wiele rodzajów płyt głównych, od rozwiązań budżetowych po układy dla entuzjastów. Postaram się nakreślić czym kierować się przy zakupie nowej płyty-matki.
+
+        </div>
+        <center><a href="../index.html"><img class="powrot" src="../grafika/baner.png"></a>
+            <div class="powrotp">
+                Aby powrócić kliknij baner.
+            </div>
+        </center>
+        <br><br>
+        <div class="naglowek">
+            Dobór płyty głównej. Socket
+
+        </div>
+        <div>
+            Pierwszą rzeczą, nad którą należy się zastanowić jest dobór procesora do płyty, albo płyty do procesora. Wiodący producenci (Intel i AMD) posiadają różne gniazda, a procesory nie są kompatybilne z innymi socketami. Mało tego, różne rodziny procesorów tego samego producenta również mogą być deklarowane do różnych ewolucji gniazd. Do tego tematu należy więc podejść dość ostrożnie, bo nie ma takiej możliwości, by przykładowo procesor Intela z rodziny Haswell, deklarowany dla gniazda 1150 umieścić w gnieździe 1151. Nie wspominając już o gniazdach AMD, np. AM3+.
+
+        </div>
+        <center><img src="../grafika/dobor_plyty_glownej1.png"></center>
+        <br>
+        <div>
+            Więcej o procesorach i ich socketach można przeczytać w artykule znajdującym się pod adresem: http://www.mamkomputer.info/skladamy-komputer-jak-dobrac-procesor/
+        </div>
+        <div class="naglowek">
+            Dobór płyty głównej. Chipset
+
+        </div>
+        <div>Chipset jest podstawowym elementem płyty głównej i jednym z ważniejszych kryteriów, którymi powinniśmy się kierować przy jej wyborze. Jego zadaniem jest kierowanie współpracą pomiędzy wszystkimi elementami komputera. W oryginalnej architekturze x86 składał się z dwóch podstawowych elementów, które nazwane zostały mostkami: północnym i południowym. Mostek północny zajmował się sterowaniem szybkimi elementami: procesorem, pamięcią RAM i magistralą FSB, która z kolei jest swego rodzaju autostradą, po której poruszają się dane między procesorem i pamięcią RAM, a także kartą graficzną. Mostek południowy z kolei kontrolował karty rozszerzeń takie jak karta dźwiękowa i sieciowa, urządzenia peryferyjne (USB) oraz dyski twarde i napędy. W dzisiejszych czasach nieco się to zmieniło, większość funkcji mostka północnego została przeniesiona do samego procesora (na przykład kontroler pamięci), a reszta jego zadań została połączona z funkcjami mostka południowego w jeden układ.</div>
+        <center><img src="../grafika/dobor_plyty_glownej2.png"></center>
+        <div>Dość ciężko jest wymienić i opisać wszystkie dostępne na rynku chipsety, gdyż każdy socket posiada ich osobny zestaw. Każdy z nich do innych zastosowań i oczywiście w innym przedziale cenowym. Z tego powodu przedstawię chipsety dla najpopularniejszych, na dzień dzisiejszy gniazd, czyli 1150 dla procesorów 4 i 5 generacji firmy Intel oraz AM3+ wspierających procesory serii FX firmy AMD.</div>
+        <br>
+        <div class="naglowek">
+            AMD AM3+
+
+        </div>
+        <div>
+            990FX – Chipset najwydajniejszy. Wspiera łączenie wiele kart graficznych (do czterech), płyty główne o niego oparte są zazwyczaj najdroższe, przeznaczone dla entuzjastów.
+            <br><br><br>
+            990X – Nieco uboższa wersja poprzednika, która umożliwia łączenie do dwóch kart graficznych.
+            <br><br><br>
+            980G – Jeszcze mniej zaawansowana wersja, która umożliwia podłączenie jednej karty graficznej, lecz za to posiada na pokładzie zintegrowany układ graficzny ATI Radeon™ HD 4250. Możliwe jest również połączenie grafiki zintegrowanej wraz z układem dedykowanym dzięki Hybrid CrossFireX.
+            <br><br><br>
+            970 – Najbardziej podstawowy chipset z wymienionych, umożliwia zainstalowanie jednego układu graficznego.
+            <br><br><br>
+            Wszystkie z wyżej wymienionych chipsetów posiadają wsparcie dla maksymalnie 14 portów USB 2.0 oraz PCI-Express 2.0.</div>
+        <br>
+        <div class="naglowek">
+            Intel 1150
+
+        </div>
+        <div>
+            Z97/Z87 – Chipset dla entuzjastów, również idealny dla graczy, którzy chcą wycisnąć maksimum ze swojego sprzętu. Posiada najmocniejszą sekcję zasilania, co umożliwia overclocking procesorów z serii K. Naturalnie umożliwia również łączenie wielu kart graficznych.
+            <br><br><br>
+            H97/H87 – Wersja podobna wyposażeniem do Z97, lecz nie umożliwia overclockingu, ani łączenia wielu kart graficznych.
+            <br><br><br>
+            Wersje H97 i Z97 różnią się od H87 i Z87 wspieraniem interfejsu M.2 @ PCI Express, który służy do obsługi dysków SSD ze znacznie wyższą prędkością niż SATAIII.
+            <br><br><br>
+            B85 – Wersja „biznesowa”. Nie wspiera overclockingu ani łączenia wielu kart graficznych.
+            <br><br><br>
+            H81 – Wersja budżetowa, najtańsza. Jej najbardziej rozpoznawalną cechą w porównaniu do B85 jest posiadanie jedynie dwóch slotów na pamięć RAM.
+            <br><br><br>
+            W następnym odcinku zastanowimy się, jaką wybrać płytę oraz dokonamy przeglądu najpopularniejszych rozmiarów płyt głównych.</div>
+        <div class="Okienko">
+            <div class="naglowek1">
+                2.Płyta główna
+            </div>
+            <img class="obrazek" src="../grafika/plyta1.png">
+
+            <div class="menu">
+
+                <a href="dobor_plyty_glownej.html">Dobór płyty głównej</a>
+                <br>
+                <a href="wybieramy_plyte_glowna.html">Wybieramy płytę główną</a>
+                <br>
+                <a href="zlacza_i_porty_plyty_glownej.html">Złącza i porty płyty głównej</a>
+
+                <br>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

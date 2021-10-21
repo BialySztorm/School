@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+div {
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.zadanie {
+    border: 5px #aeaeae ridge;
+    margin: 20px;
+    background-color: #eaeaea;
+    color: #606060;
+}
+
+body {
+    background-color: black;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3vh;
+}
+
+.tabela {
+    width: 100px;
+    border: 3px ridge black;
+}
+
+.akapit {
+    width: 30%;
+}
+
+.wykaz {
+    width: 5em;
+}
+
+.obrazek {
+    width: 200px;
+}
+
+.akapit1 {
+    height: 5cm;
+}
+
+.wykaz1 {
+    height: 20em;
+}
+
+.tabela1 {
+    height: 100px;
+}
+
+.obrazek1 {
+    height: 40px;
+}
+
+.niezastepowane {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    left:auto;
+    right:auto;
+}
+
+.zastepowane {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.niezastepowane1 {
+    margin-left: auto;
+    width: 20px;
+    margin-right: auto;
+}
+
+.niezastepowane2 {
+    margin-left: auto;
+    border-left: 5px solid red;
+    padding-left: 10px;
+    width: 400px;
+    padding-right: 10px;
+    border-right: 5px solid red;
+    margin-right: 20px
+}
+
+.zastepowane1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oblewanie {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blok1 {
+    float: left;
+    width: auto;
+    /* float: left;
+    width: 100%; */
+    /* float: left;
+    width: 25%; */
+}
+
+.blok2 {
+    float: left;
+    width: auto;
+    /* float: left;
+    width: 100%; */
+    /* float: left;
+    width: 50%; */
+}
+
+.blok3 {
+    float: left;
+    width: auto;
+    /* float: left;
+    width: 100%; */
+    /* float: left;
+    width: 25%; */
+}
+div.absolutny{
+    position: absolute;
+    left:10px;
+    margin-left: 5%;
+    border-left: 1px red solid;
+    padding-left: 1em ;
+    width: auto;
+    padding-right: 1vw;
+    border-right: 2px red solid;
+    margin-right: auto;
+    right:auto;
+    z-index: 6;
+}
+textarea.absolutny{
+    position: absolute;
+    left:10px;
+    margin-left: 5%;
+    border-left: 1px red solid;
+    padding-left: 1em ;
+    width: auto;
+    padding-right: 1vw;
+    border-right: 2px red solid;
+    margin-right: auto;
+    right:auto;
+    z-index: 6;
+}
+.niezastepowane3{
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.zastepowane2{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left:auto;
+    right:auto;
+}
+.niezastepowane4{
+    display:inline;
+    top:auto;
+    bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.oblewanie2{
+    float: right;
+    height: auto;
+    top: auto;
+    bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.absolutny1{
+    position: absolute;
+    top: auto;
+    bottom: auto;
+}
+.minMax{
+    border:white 1px solid;
+    max-width: 1000px;
+    min-width: 500px;
+    max-height: 1000px;
+    min-height: 100px;
+}
+.over{
+    height: 20vh;
+    width: 20vw;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+.resize{
+    /* resize: both; */
+    /* resize: vertical; */
+    /* resize: horizontal; */
+    resize: none;
+}
