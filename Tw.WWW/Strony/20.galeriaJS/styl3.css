@@ -1,0 +1,38 @@
+html{
+    background-image: url(grafika/background.jpg);
+    background-repeat: repeat;
+    background-color: rgba(102, 204, 129, 0.5);
+}
+
+.all>img{
+    width: 15vw;
+}
+.output, .all{
+    text-align: center;
+}
+#shibas{
+    width: 35vw;
+}
+body>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+    
+}
+body>div>div{
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+body>div>div{
+    padding: 1vw;
+    border: 2px grey dashed;
+    border-radius: 2%;
+    box-sizing: border-box;
+    
+}

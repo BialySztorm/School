@@ -1,0 +1,88 @@
+body{
+    background-color:cadetblue;
+}
+.naglowek {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+div {
+    background-color: white;
+    font-size: 20px;
+    padding:20px;
+}
+.calosc{
+    width:90%;
+    margin-left:5%;
+    background-color:white;
+}
+blue{
+    color:blue;
+}
+yellow{
+    color:orange;
+}
+green{
+    color:green;
+}
+red{
+    color:red;
+}
+.slowniczek{
+    border-style:groove;
+    border-radius: 30px;
+    background-color:lightgrey;
+}
+bigs{
+    font-size:25px;
+    font-weight: bold;
+}
+.grubli{
+    font-size:25px;
+    font-weight: bold;
+}
+.uwaga{
+    border-style:groove;
+    border-radius: 30px;
+    background-color:lightgoldenrodyellow;
+}
+.Okienko {
+    margin: 20px;
+    border-style: solid;
+    overflow: hidden;
+    padding:0px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom-style: solid;
+    color: black;
+    border-color: silver;
+    border-width: 2px;
+    line-height: 50px;
+    padding: 5px;
+
+}
+.naglowek1 {
+
+    background-color: silver;
+    top: 0px;
+    border-style: hidden;
+    font-size: 25px;
+    padding: 10px;
+}
+.menu {
+    padding: 50px;
+    border-style: hidden;
+    font-size: 25px;
+}
+.obrazek {
+    float: left;
+    margin-right: 10px;
+    margin: 15px;
+}
+.powrotp{
+    margin-top: 0px;
+    padding-top:0px;
+    color:silver;
+}

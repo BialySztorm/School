@@ -1,0 +1,43 @@
+body {
+    color: red;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+div {
+    background-color: pink;
+    border: dotted;
+    border-color: cyan;
+}
+
+.a {
+    color: blue;
+    font-size: 50px;
+    text-shadow: 10px 10px red;
+    font-family: Snap ITC;
+    font-weight: lighter;
+}
+
+.b {
+    font-size: 2em;
+    font-family: Sylfaen;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+.c {
+    font-size: larger;
+    font-family: Vivaldi;
+    font-weight: bold;
+}
+
+.d {
+    font-size: smaller;
+    font-family: Monotype Corsiva;
+    font-weight: 900;
+}
+
+.e {
+    font-size: 5em;
+    font-weight: 100;
+}

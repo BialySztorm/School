@@ -1,0 +1,48 @@
+div{
+    border-style:solid;
+    width:500px;
+    font-size:20px;
+    font-weight: bold;
+    font-family: old english text mt;
+}
+.ii{
+	position:fixed;
+	right:0;
+	bottom:0;
+	width:200px;
+	border-style:ridge;
+	border-width:50px;
+	border-color:red;
+	border-radius:50px;
+}
+.i3{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:200px;
+	border-style:ridge;
+	border-width:50px;
+	border-color:red;
+	border-radius:50px;
+}
+.aa{
+    white-space:pre;
+}
+.bb{
+    white-space:pre-wrap;
+}
+/*lol*/
+.cc{
+    white-space: pre-line;
+}
+.dd{
+    white-space: nowrap;
+}
+.ee{
+    white-space: normal;
+    text-align: end;
+    vertical-align:sub;
+}
+div spam{
+    vertical-align:sub;
+}

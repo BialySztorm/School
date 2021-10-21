@@ -1,0 +1,55 @@
+body{
+    background-image:linear-gradient(black,red,black);
+}
+img {
+    position: absolute;
+    top:20%;
+    left: 40%;
+    border-style: groove;
+    border-color: hotpink;
+    border-width: 5px;
+}
+
+selektor p{
+    position:relative;
+    line-height: 10px;
+}
+
+.Ww {
+    opacity:1;
+    font-size:4em ;
+    font-family: old english text mt;
+    color:red;
+    text-shadow: 3px 3px white;
+}
+
+.Wp {
+    opacity:1;
+    font-size:1.5em;
+    font-family:segoe script;
+    font-weight:bold;
+    text-shadow: 2px 2px hotpink;
+}
+a{
+    opacity:0;
+}
+.href{
+    opacity:1;
+    position:absolute;
+    bottom:0px;
+    border-style:dashed;
+    border-color:darkred;
+    background-image:radial-gradient(hotpink,red);
+    width:100px;
+}
+
+#css{
+    position: absolute;
+    left:120px;
+}
+.cbalink{
+    opacity:0;
+}
+div{
+    opacity:0;
+}

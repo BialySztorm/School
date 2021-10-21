@@ -1,0 +1,41 @@
+body {
+    background-image: radial-gradient(red, black);
+    background-attachment: fixed;
+}
+
+.bb {
+    width: 500px;
+    height: 100px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+a {
+    width: 100px;
+    height: 50px;
+    border-style: solid;
+    box-shadow: inset -5px -5px 10px 1px red;
+    text-decoration: none;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: green;
+}
+
+a:hover {
+    box-shadow: inset 3px 3px 3px red;
+    opacity: 0.8;
+}
+
+a:visited {
+    color: black;
+}
+
+.ramka {
+    width: 540px;
+    height: 500px;
+    margin:auto;
+    border: groove 20px red;
+    background-color: pink;
+}

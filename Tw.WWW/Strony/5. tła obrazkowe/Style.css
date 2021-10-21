@@ -1,0 +1,65 @@
+ body {
+     //background-image:url("obrazek1.jpg"),url("obrazek2.jpg");
+     background-image: url("obrazek1.jpg");
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     //background-repeat:repeat-x;
+     //background-repeat:repeat-y;
+     background-size: 100%;
+ }
+
+ div {
+     border-style: solid;
+     border-width: 10px;
+     border-color: red;
+     width: 50%;
+     height: 500px;
+     margin: auto;
+ }
+
+ #a {
+     background-image: url("obrazek2.jpg");
+     border-radius: 30px;
+     border-style: ridge;
+     border-width: 30px;
+     color:white;
+     border-color: darkslategray;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-position: center;
+ }
+
+ #b {
+     border-radius: 50px;
+     background-image: url("obrazek3.jpg");
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-position: center;
+ }
+
+ #c {
+     border-radius: 50px;
+     background-image: url("obrazek4.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ #d {
+     border-radius: 50px;
+     background-image: url("gif1.gif");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+#e {
+     border-radius: 50px;
+     background-image: url("pusty1.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+    transition: 2s;
+ }
+#e:hover{
+    background-image:url("gif1.gif");
+}

@@ -1,0 +1,29 @@
+body{
+    background-image:linear-gradient(black,red,black)
+}
+img {
+    position: absolute;
+    top:20%;
+    left: 40%;
+    border-style: groove;
+    border-color: hotpink;
+    border-width: 5px;
+}
+
+div {
+    position: relative;
+}
+
+.Ww {
+    font-size:4em ;
+    font-family: old english text mt;
+    color:red;
+    text-shadow: 3px 3px white;
+}
+.Wp {
+    font-size:1.5em;
+    font-family:segoe script;
+    font-weight:bold;
+    text-shadow: 2px 2px hotpink;
+}
+

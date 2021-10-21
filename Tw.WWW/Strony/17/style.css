@@ -1,0 +1,67 @@
+body{
+    background-image: radial-gradient(#4bf542, #d12121, #000000);
+    background-attachment: fixed;
+}
+
+div{
+    border: red 20px groove;
+    /* animation: ten 5s infinite; */
+    transition: 2s;
+    opacity: 0.5;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.cus{
+    width: 50%;
+}
+
+#wszystko{
+    /* width:50%; */
+    column-gap: 100px;
+    column-rule: #d12121 15px groove;
+    text-align: left;
+    border:none;
+    opacity: 1;
+}
+
+#tytul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@keyframes ten{
+    0%, 100%{background-image: radial-gradient(black, red, green, blue)}
+    25%{background-image: radial-gradient(red, green, blue, black)}
+    50% {background-image: radial-gradient(green, blue, black, red)}
+    75% {background-image: radial-gradient( blue,black, red, green,)}
+}
+
+#submit1{
+    background-color: aqua;
+    margin:20px;
+    width:200px;
+    height: 50px;
+}
+
+#submit1:focus{
+    color: red;
+    transition: 1s;
+}
+
+#select1{
+    transition: 2s;
+    width: 100px;
+    height: 50px;
+}
+select{
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+}
+img{
+    display:block;
+    width:400px;
+    min-width: 100px;
+    max-width: 500px;
+}

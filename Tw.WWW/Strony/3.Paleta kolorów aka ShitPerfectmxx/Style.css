@@ -1,0 +1,33 @@
+div{
+    Border-color:red;
+    height: 200px;
+    width: 400px;
+    border-style:dashed;
+    border-width:20px;
+    font-size: 50px;
+    font-family: magneto;
+}
+#a{
+    background-color: darkred;
+    font-family: old english text mt;
+}
+#b{
+    background-color: rgb(154,150,138);
+    font-family: vladimir script;
+}
+#c{
+    background-color: rgb(99%,50%,50%);
+    font-family: showcard gothic;
+}
+#d{
+    background-color: #0a4714;
+    font-family: magneto;
+}
+#e{
+    background-color: hsl(270,84%,35%);
+    font-family: ravie;
+}
+#f{
+    background-color: hotpink;
+    font-family: algerian;
+}

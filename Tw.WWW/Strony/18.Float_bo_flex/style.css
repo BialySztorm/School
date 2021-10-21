@@ -1,0 +1,38 @@
+body{
+    margin: 0%;
+}
+div{
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    text-align: center;
+    font-size: 3em;
+}
+nav, header{
+    width: 100vw;
+    height: 5vw;
+}
+nav>div{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(153, 49, 35, 0.267);
+}
+header>div{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(197, 44, 24, 0.575);
+}
+section{
+    width: 100vw;
+    height: 25vw;
+}
+section.s1>div{
+    width: 33.33%;
+    height: 100%;
+    background-color: rgba(24, 197, 53, 0.575);
+}
+section.s2>div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 165, 73, 0.575);
+} 

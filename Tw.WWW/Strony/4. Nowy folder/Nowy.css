@@ -1,0 +1,58 @@
+body{
+	//background-color:red;
+}
+div{
+    background-color: darkred;
+    font-family: old english text mt;
+	font-size:100px;
+	border-style:ridge;
+	height:200px;
+	width:200px;
+	//display:inline-block;
+	overflow:auto;
+	border-width:50px;
+	border-color:red;
+	border-radius:50px;
+	margin-left:auto;
+	margin-right:auto
+}
+#a{
+    background-color: darkred;
+    font-family: old english text mt;
+	border-color:grey;
+}
+#b{
+    background-color: #000000;
+    font-family: magneto;
+	color:white;
+	border-color:red;
+	position:fixed;
+	right:0;
+	bottom:0;
+}
+img{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:200px;
+	border-style:ridge;
+	border-width:50px;
+	border-color:red;
+	border-radius:50px;
+}
+#c{
+    background-color: rgba(0%,0%,100%,50%);
+    font-family: vladimir script;
+	border-color:pink;
+}
+#d{
+    background-color: hsla(125,88%,50%,50%);
+    font-family: showcard gothic;
+	border-color:yellow;
+	position:relative;
+	top:-150px
+}
+/*1 - czerwony predefiniowany
+2 - czarny 16
+3 - niebieski rgb
+4 - zielony hsl */

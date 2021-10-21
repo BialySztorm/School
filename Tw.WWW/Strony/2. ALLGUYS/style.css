@@ -1,0 +1,27 @@
+html{
+	border-style:solid;
+	border-color:yellow;
+}
+body{
+	background-color:pink;
+	border-style:solid;
+	border-color:red;
+	color:red;
+}
+p{
+	border-style:solid;
+	border-color:green;
+	width:50%;
+	font-size:50px;
+	height:100px;
+	background:url('heman.jpg');
+	overflow:auto;
+	display:inline-block;
+}
+span{
+	color:pink;
+	border-style:dotted;
+	width:20px;
+	height:100px;
+	display:inline-block;
+}

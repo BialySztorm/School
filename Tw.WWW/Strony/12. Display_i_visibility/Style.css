@@ -1,0 +1,64 @@
+body{
+    background-image: url(Grafika/tlo.jpg);
+    background-size: cover;
+}
+.a {
+    width: 500px;
+    height: 250px;
+    border-style: solid;
+    border-color: black;
+    font-size: 33px;
+}
+
+.t1 {
+    position:absolute;
+    left:20px;
+    top 30px;
+    text-shadow:5px -5px 10px black; 
+}
+
+.t2 {
+    position:absolute;
+    left:20px;
+    top: 310px;
+    text-shadow:5px -5px 10px blue; 
+}
+
+.t3 {
+    position:absolute;
+    left:20px;
+    top: 600px;
+}
+
+.b {
+    position:fixed;
+
+    width:200px;
+    height: 100px;
+}
+.d1{
+    left:20px;
+    box-shadow: 5px 5px 10px black;
+}
+.d2{
+    left:260px;
+    box-shadow: -5px -5px 10px blue;
+}
+.d3{
+    left:500px;
+    box-shadow: -5px -5px 10px black inset;
+}
+.d4{
+    left:740px;
+    box-shadow: 5px 5px 10px black inset;
+}
+.d5{
+    left:980px;
+    box-shadow: -5px -5px 10px black inset;
+}
+.d5:hover{
+    transition: 1s;
+    box-shadow: 5px 5px 10px black inset;
+}
+}
+

@@ -1,0 +1,30 @@
+body {
+    background-image: radial-gradient(red, black);
+    background-attachment: fixed;
+}
+
+img {
+    width: 10%;
+}
+
+div {
+    outline: solid;
+    height: auto;
+    overflow: auto;
+    white-space: nowrap;
+    border: groove 20px red;
+}
+
+.ramka {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    padding: 10px;
+    border: groove 20px red;
+    margin-top: 20px;
+}
+
+img:hover {
+    opacity: 0.7;
+}
