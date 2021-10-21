@@ -29,6 +29,7 @@
 				// Try start the task on folder open
 				"runOptions": {
 					"runOn": "folderOpen",
+					"reevaluateOnRerun": true
 				}
 			},
 			{
@@ -51,7 +52,7 @@
 				"problemMatcher": [],
 				// Create the tasks in a terminal group
 				"presentation": {
-					"group": "my-group"
+					"group": "server"
 				}
 			},
 			{
@@ -69,7 +70,7 @@
 				"isBackground": true,
 				"problemMatcher": [],
 				"presentation": {
-					"group": "my-group"vu[p[pp[[[pvgp[[[[]]]]]]]]]
+					"group": "server"
 				}
 			}
 		]
