@@ -25,12 +25,12 @@
 				"group": {
 					"kind": "build",
 					"isDefault": true
-				},
-				// Try start the task on folder open
-				"runOptions": {
-					"runOn": "folderOpen",
-					"reevaluateOnRerun": true
 				}
+				// Try start the task on folder open
+				// "runOptions": {
+					// "runOn": "folderOpen",
+					// "reevaluateOnRerun": true
+				// }
 			},
 			{
 				// The name that shows up in terminal tab
