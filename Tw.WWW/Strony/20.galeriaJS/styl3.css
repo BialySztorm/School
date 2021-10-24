@@ -11,7 +11,7 @@ html{
     text-align: center;
 }
 #shibas{
-    width: 35vw;
+    height: 35vw;
 }
 body>div{
     display: flex;
