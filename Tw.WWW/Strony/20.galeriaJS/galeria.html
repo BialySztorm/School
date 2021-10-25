@@ -11,25 +11,31 @@
 <body>
     <div>
         <div class="all">
-            <img src="grafika/shiba1.png" index=0>
-            <img src="grafika/shiba2.png" index=1>
-            <img src="grafika/shiba3.png" index=2>
-            <img src="grafika/shiba4.png" index=3>
-            <img src="grafika/shiba5.png" index=4>
+            <img id="left" src="grafika/arrow.png" style="transform: scaleX(-1);">
+            <img class="shibas" src="grafika/shiba1.png" index=1>
+            <img class="shibas" src="grafika/shiba2.png" index=2>
+            <img class="shibas" src="grafika/shiba3.png" index=3>
+            <img class="shibas" src="grafika/shiba4.png" index=4 style="display: none;">
+            <img class="shibas" src="grafika/shiba5.png" index=5 style="display: none;">
+            <img id="right" src="grafika/arrow.png">
         </div>
         <div class="output">
-            <img id="left" src="grafika/arrow.png" style="transform: scaleX(-1);">
-            <img id="shibas" src="grafika/shiba1.png" index=0>
-            <img id="right" src="grafika/arrow.png">
+            <img id="left1" src="grafika/arrow.png" style="transform: scaleX(-1);">
+            <img class="shibas" id="shibas" src="grafika/shiba1.png" index=0>
+            <img id="right1" src="grafika/arrow.png">
         </div>
     </div>
 
     <script>
-        var shibas = document.querySelectorAll(".all img");
+        var shibas = document.querySelectorAll(".shibas");
         // console.log(shibas);
         var output = document.getElementById("shibas");
         var left = document.getElementById("left");
         var right = document.getElementById("right");
+        var left1 = document.getElementById("left1");
+        var right1 = document.getElementById("right1");
+        var first = 0;
+        var last = 2;
 
         function chgOutput(shiba, i) {
             output.src = shiba.src;
@@ -38,11 +44,28 @@
 
         for (var i = 0; i < shibas.length; i++) {
             shibas[i].onclick = function () {
-                chgOutput(this, this.getAttribute('index'));
+                chgOutput(this, this.getAttribute('index'))
             }
         }
 
         function goLeft() {
+            if(first == 0)
+                return
+            else{
+                shibas[--first].style.display = "inline"
+                shibas[last--].style.display = "none"
+            }
+
+        }
+        function goRight() {
+            if(last == shibas.length-2)
+                return
+            else{
+                shibas[++last].style.display = "inline"
+                shibas[first++].style.display = "none"
+            }
+        }
+        function goLeft1() {
             var tmp = output.getAttribute('index')
             if (tmp == 0) {
                 chgOutput(shibas[shibas.length - 1], shibas.length - 1);
@@ -51,7 +74,7 @@
             }
         }
 
-        function goRight() {
+        function goRight1() {
             var tmp = output.getAttribute('index')
             if (tmp == shibas.length - 1) {
                 chgOutput(shibas[0], 0);
@@ -59,9 +82,10 @@
                 chgOutput(shibas[parseInt(tmp) + 1], parseInt(tmp) + 1);
             }
         }
-
         left.onclick = goLeft;
         right.onclick = goRight;
+        left1.onclick = goLeft1;
+        right1.onclick = goRight1;
     </script>
 </body>
 
