@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>galeria</title>
     <link rel="stylesheet" href="styl3.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -15,8 +15,6 @@
             <img class="shibas" src="grafika/shiba1.png" index=1>
             <img class="shibas" src="grafika/shiba2.png" index=2>
             <img class="shibas" src="grafika/shiba3.png" index=3>
-            <img class="shibas" src="grafika/shiba4.png" index=4 style="display: none;">
-            <img class="shibas" src="grafika/shiba5.png" index=5 style="display: none;">
             <img id="right" src="grafika/arrow.png">
         </div>
         <div class="output">
@@ -34,41 +32,47 @@
         var right = document.getElementById("right");
         var left1 = document.getElementById("left1");
         var right1 = document.getElementById("right1");
-        var first = 0;
-        var last = 2;
+        const shibasLen = 9
 
         function chgOutput(shiba, i) {
-            output.src = shiba.src;
+            output.src = "grafika/shiba" + i + ".png";
             output.setAttribute('index', i);
         }
 
-        for (var i = 0; i < shibas.length; i++) {
+        for (var i = 0; i < shibas.length-1; i++) {
             shibas[i].onclick = function () {
                 chgOutput(this, this.getAttribute('index'))
             }
         }
 
         function goLeft() {
-            if(first == 0)
-                return
-            else{
-                shibas[--first].style.display = "inline"
-                shibas[last--].style.display = "none"
+            for (i = 0; i < shibas.length-1; i++) {
+                if(shibas[i].getAttribute("index") == 1){
+                    shibas[i].src = "grafika/shiba"+shibasLen+".png"
+                    shibas[i].setAttribute("index", shibasLen)
+                } else {
+                    shibas[i].src = "grafika/shiba"+(shibas[i].getAttribute("index")-1)+".png"
+                    shibas[i].setAttribute("index", (shibas[i].getAttribute("index")-1))
+                }
             }
+        }
 
-        }
         function goRight() {
-            if(last == shibas.length-2)
-                return
-            else{
-                shibas[++last].style.display = "inline"
-                shibas[first++].style.display = "none"
+            for (i = 0; i < shibas.length - 1; i++) {
+                if(shibas[i].getAttribute("index") == shibasLen){
+                    shibas[i].src = "grafika/shiba1.png"
+                    shibas[i].setAttribute("index", 1)
+                } else {
+                    shibas[i].src = "grafika/shiba"+(parseInt(shibas[i].getAttribute("index"))+1)+".png"
+                    shibas[i].setAttribute("index", (parseInt(shibas[i].getAttribute("index"))+1))
+                }
             }
         }
+
         function goLeft1() {
             var tmp = output.getAttribute('index')
-            if (tmp == 0) {
-                chgOutput(shibas[shibas.length - 1], shibas.length - 1);
+            if (tmp == 1) {
+                chgOutput(shibas[shibasLen], shibasLen);
             } else {
                 chgOutput(shibas[tmp - 1], tmp - 1);
             }
@@ -76,8 +80,8 @@
 
         function goRight1() {
             var tmp = output.getAttribute('index')
-            if (tmp == shibas.length - 1) {
-                chgOutput(shibas[0], 0);
+            if (tmp == shibasLen) {
+                chgOutput(shibas[1], 1);
             } else {
                 chgOutput(shibas[parseInt(tmp) + 1], parseInt(tmp) + 1);
             }

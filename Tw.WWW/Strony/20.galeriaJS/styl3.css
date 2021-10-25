@@ -6,12 +6,14 @@ html{
 
 .all>img{
     width: 15vw;
+    max-height: 15vw;
 }
 .output, .all{
     text-align: center;
 }
 #shibas{
     height: 35vw;
+    width: 35vw;
 }
 body>div{
     display: flex;
