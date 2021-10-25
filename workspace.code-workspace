@@ -37,7 +37,7 @@
 				"label": "HTML5 Server",
 				// The task will launch a shell
 				"type": "shell",
-				"command": "HTML5Server",
+				"command": "HTML5Server -ServerPort=1111",
 				// Set the shell type
 				"options": {
 					"shell": {
