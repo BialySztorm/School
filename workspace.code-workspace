@@ -58,7 +58,7 @@
 			{
 				"label": "cmd",
 				"type": "shell",
-				"command": "C:/xampp/xampp_start",
+				"command": "",
 				"options": {
 					"shell": {
 						"executable": "cmd.exe",
