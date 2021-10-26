@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pogotowie ratunkowe</title>
+    <link rel="stylesheet" href="styl5.css">
+</head>
+
+<body>
+    <header>
+        <div><img src="obraz.jpg" alt="pogotowie"></div>
+        <div>
+            <h1>Pogotowie<br>Ratunkowe</h1>
+        </div>
+        <div>
+            <p>Kontakt:<br>022 222 11 333</p>
+        </div>
+    </header>
+    <article>
+        <div>
+            <h2>Dodaj nowe zgłoszenie</h2>
+            <form action="zgloszenie.php" method="post">
+                <div>Numer zespołu ratowniczego:</div>
+                <input type="number" name="nr_zespolu">
+                <div>Numer dyspozytora:</div>
+                <input type="number" name="nr_dyspozytora">
+                <div>Adres:</div>
+                <input type="text" size="100" name="adres">
+                <br>
+                <input type="button" value="WYCZYŚĆ" id="clear">
+                <input type="submit" value="ZGŁOŚ">
+            </form>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h4>Numery alarmowe</h4>
+            <ul>
+                <li>999</li>
+                <li>112</li>
+            </ul>
+        </div>
+        <div><a href="kwerendy.txt">Pobierz kwerendy</a></div>
+        <div>
+            <p>Autor<br>Andrzej Manderla</p>
+        </div>
+        <script>
+            var items = document.getElementsByTagName("input")
+            document.getElementById("clear").onclick = function() {
+                for(i = 0;i<3; i++)
+                {
+                    items[i].value = ""
+                }
+            }
+        </script>
+    </footer>
+</body>
+
+</html>
