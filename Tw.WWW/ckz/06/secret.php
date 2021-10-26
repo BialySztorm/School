@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="AM.png" type="image/x-icon" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -20,13 +21,12 @@
             $good = false;
             $result = mysqli_query($connection, "SELECT * FROM users WHERE users.email like '$email'");
             while ($curr = mysqli_fetch_assoc($result)) {
-                if (password_verify($password, $curr['password'])){
+                if (password_verify($password, $curr['password'])) {
                     $_SESSION['logged_in'] = true;
                     $good = true;
                 }
-                    
             }
-            if(!$good)
+            if (!$good)
                 header("Location: ./");
         } else if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
             header("Location: ./");

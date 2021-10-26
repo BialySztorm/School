@@ -31,9 +31,9 @@ body>div{
 
 input, button{
     background-color: rgba(255,255,255,0.2);
-    border-radius: 1vw/1vw;
+    border-radius: 2em;
     width: 60%;
-    padding: 0.5vw;
+    padding: 0.5em;
     text-align: center;
 }
 form>input{
@@ -50,4 +50,14 @@ input:focus{
 }
 a:visited, a{
     color: black;
+}
+@media screen and (max-width: 1000px){
+    body>div{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 600px){
+    body>div{
+        width: 65vw;
+    }
 }
