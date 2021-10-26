@@ -2,6 +2,6 @@
 
 session_start();
 // $_SESSION['logged_in'] = false;
-session_unset();
+unset($_SESSION['logged_in']);
 header("Location: ./")
 ?>
