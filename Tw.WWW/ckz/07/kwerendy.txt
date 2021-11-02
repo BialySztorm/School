@@ -1,0 +1,7 @@
+INSERT INTO `filmy` (`id`, `gatunki_id`, `rezyserzy_id`, `tytul`, `rok`, `ocena`) VALUES (NULL, '5', '0', 'Suburbicon', '2017', '5');
+
+SELECT filmy.tytul, gatunki.nazwa FROM filmy INNER JOIN gatunki ON filmy.gatunki_id = gatunki.id WHERE filmy.ocena = 5
+
+SELECT filmy.tytul, filmy.rok FROM filmy WHERE (filmy.ocena = 5 AND filmy.gatunki_id = 3)
+
+CREATE TABLE `dane`.`aktorzy` ( `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY , `imie` TEXT NOT NULL , `nazwisko` TEXT NOT NULL ) ENGINE = InnoDB;
