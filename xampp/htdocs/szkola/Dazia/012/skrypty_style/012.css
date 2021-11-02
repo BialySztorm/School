@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+*{
+    font-family: 'Texturina', serif;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+td, input, select{
+    border:2px #ffc39a solid;
+    background-color: #fff7c5;
+    padding:1vh 1vw;
+}
+tr{
+    color:black;
+}
+input, select{
+    color:black;
+    width:18%;
+}
+.parzyste>td{
+    background-color: #d4f7ff;
+    border:#d8ffc0;
+}
+table{
+    margin:auto;
+    opacity: 0.8;
+    border-spacing: 1vh;
+}
+form{
+    text-align: center;
+}
+body#first{
+    background-image:linear-gradient(#ffc6c6,#ffc39a,#fff7c5,#d8ffc0,#d4f7ff);
+    text-align: center;
+    margin: 0px;
+}
+iframe{
+    width: 80vw;
+    margin:1vw;
+    border: none;
+}
+#i1{
+    height: 10vh;
+}
+#i2{
+    height: 60vh;
+    width: 95vw;
+}

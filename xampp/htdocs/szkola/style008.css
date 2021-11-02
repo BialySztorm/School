@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+* {
+    /*GreyScaleColors*/
+    /*--body-clr:#F2F5F7;*/
+    /*--cal-clr:#FFFFFF;*/
+    /*--pyt1-clr:#e5e5e5;*/
+    /*--pyt2-clr:#625d5d;*/
+    /*--odp-clr:#ededed;*/
+    /*RainbowSetColors*/
+    /*--body-clr:#ffd4e5;*/
+    /*--cal-clr:#d4ffea;*/
+    /*--pyt1-clr:#eecbff;*/
+    /*--pyt2-clr:#feffa3;*/
+    /*--odp-clr:#dbdcff;*/
+    /*FlameColors*/
+    --body-clr: #901838;
+    --cal-clr: #d84030;
+    --pyt1-clr: #f05020;
+    --pyt2-clr: #f89830;
+    --odp-clr: #f8b837;
+}
+
+body {
+    background-color: var(--body-clr);
+}
+
+.tlo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url("unicorn.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+.calosc {
+    width: 80vw;
+    margin: auto;
+    background-color: var(--cal-clr);
+    padding: 2vh 2vw;
+    font-family: 'Amarante', cursive;
+    opacity: 0.75;
+}
+
+.tytul {
+    font-size: 6em;
+    font-family: 'Ribeye Marrow', cursive;
+}
+
+.pytania {
+    /*border-radius:5%;*/
+    border-bottom-left-radius: 1% 10%;
+    border-bottom-right-radius: 1% 10%;
+    border-top-left-radius: 1% 10%;
+    border-top-right-radius: 1% 10%;
+    padding: 1vh 1vw;
+    background-color: var(--pyt1-clr);
+    margin: 2vh 0;
+}
+
+.pytanie {
+    margin-bottom: 1vh;
+    padding: 1vh 1vw;
+    background-color: var(--pyt2-clr);
+    border-bottom-left-radius: 1% 20%;
+    border-bottom-right-radius: 1% 20%;
+    border-top-left-radius: 1% 20%;
+    border-top-right-radius: 1% 20%;
+    font-size: 2em;
+}
+
+.odpowiedz {
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    border: white 4px solid;
+    border-radius: 5%;
+    background-color: var(--odp-clr);
+    font-size: 1.5em;
+}
+
+fieldset {
+    padding: 0px;
+    border: none;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.enter {
+    width: 100%;
+    height: 5vh;
+    /*font-size:1.5em;*/
+    /*font-family: 'Amarante', cursive;*/
+}
+
+.enter:hover {
+    background-color: var(--body-clr);
+    opacity: 0.6;
+}
+
+input {
+    background-color: var(--pyt1-clr);
+    font-family: 'Amarante', cursive;
+    font-size: 1.5em;
+}
+
+.radio {
+    float: right;
+    transform: scale(2.5);
+}
+
+.invisible {
+    display: none;
+}
+
+.red {
+    border-color: red;
+}
+
+.green {
+    border-color: green;
+}
+
+.in {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.link {
+    font-size: 10em;
+    background-color: var(--cal-clr);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    bottom: -5vw;
+    transition: bottom 1s;
+    opacity: 0.8;
+}
+
+.alink {
+    text-decoration: none;
+    color: black;
+}
+
+.alink:visited {
+    color: red;
+}
+
+.link:hover {
+    bottom: 0px;
+}

@@ -1,0 +1,51 @@
+.container {
+    background: black;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 2vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+input {
+    width: 70%;
+    height: 10vh;
+    background: none;
+    border: none;
+    border-bottom: 3px solid grey;
+    padding: 1vh 2vw;
+    font-size: 3vh;
+    color: white;
+    transition: background 1s;
+}
+button{
+    border: 0.5vh solid #878787;
+    background:#c6ced0;
+    padding: auto;
+    font-size: 3vh;
+}
+
+input:focus {
+    outline: 0;
+    background: rgba(12, 12, 12, 0.9);
+}
+@media only screen and (max-width: 900px){
+    .container{
+        width: 70vw;
+    }
+    button{
+        margin: 2vh;
+    }
+    h1{
+        font-size: 4em;
+    }
+}

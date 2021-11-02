@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+*{
+    font-family: 'Texturina', serif;
+    /* font-weight: bolder; */
+    /* font-size: 2vw; */
+}
+
+/* ["020202","0d2818","04471c","058c42","16db65"] */
+
+body{
+    background-color:#04471C;
+    text-align: center;
+    margin: 0px;
+}
+table{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%);
+    width: 60%;
+}
+table, .record{
+    color:#020202;
+}
+td{
+    background-color: #26F784;
+    padding: 0.5vw;
+}
+.record{
+    float: left;
+    font-weight: bolder;
+    padding: 2vw;
+    margin-left: 15%;
+    color: #12BA55;
+}
+.wynik{
+    padding: 0.5vw;
+    text-align: center;
+}
+.uczestnik{
+    font-weight: bolder;
+}
+.baner{
+    font-size: 1.5em;
+}
+.baner, .stopka{
+    background-color: #0D2818;
+    color: #058C42;
+    padding: 0px;
+    font-size: 4em;
+}
+.button{
+    border:1px #16DB65 solid;
+    color: #16DB65;
+    padding: 1vw;
+    width: 20vw;
+    margin:1vw;
+}
+.pointer{
+    cursor: pointer;
+}
+.stopka{
+    position:fixed;
+    bottom:0px;
+    width: 100%;
+    font-size: 2em;
+}

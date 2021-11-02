@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+*{
+    font-family: 'Texturina', serif;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+
+
+body{
+    background-image:linear-gradient(#6c757d,#ADB5BD,#CED4DA);
+    text-align: center;
+    margin: 0px;
+    color: #B1A7A6;
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    background-color: rgba(173, 181, 189,0.8);
+}
+.footer>div{
+    display: inline-block;
+    color: #495057;
+    font-size: 1vw;
+    margin: 1vw 3vw;
+    cursor: pointer;
+}
+input{
+    width: 21vw;
+    height: 14vw;
+    background-size: cover;
+}
+form{
+    display: inline-block;
+    margin:1vw;
+}
+
+.img{
+    width:21vw;
+    height: 12vw;
+    /* border: 1px black solid; */
+    opacity: 0;
+    position: absolute;
+}
+#show{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(173, 181, 189, 0.5);
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+#frame{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.close{
+    position: absolute;
+    top:2.5vw;
+    left: 90vw;
+    border: #495056 1px solid;
+    width: 5vw;
+    height: 5vw;
+}
+.close::after, .close::before{
+        content: "";
+        position: inherit;
+        display: block;
+        top:2.5vw;
+        width: 5vw;
+        height: 0.3vw;
+        background-color: #495057; 
+}
+.close::after{
+    transform: rotate(45deg);
+}
+.close::before{
+    transform: rotate(-45deg);
+}
+.show{
+    color: #495057;
+}

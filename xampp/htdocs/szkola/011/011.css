@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+*{
+    font-family: 'Texturina', serif;
+    font-weight: bolder;
+    font-size: 2vh;
+}
+td, input, select{
+    border:2px #ffc39a solid;
+    background-color: #fff7c5;
+    color:black;
+    padding:1vh 1vw;
+    margin:1vh;
+}
+input, select{
+    color:black;
+    width:18%;
+}
+.parzyste>td{
+    background-color: #d4f7ff;
+    border:#d8ffc0;
+}
+table{
+    margin:auto;
+    opacity: 0.8;
+    border-spacing: 1vh;
+}
+body{
+    background-image:linear-gradient(#ffc6c6,#ffc39a,#fff7c5,#d8ffc0,#d4f7ff)
+}
+div{
+    width: 80vw;
+    max-height: 100%;
+    background-image: linear-gradient(RGBA(212,247,255,0.6),RGBA(216,255,192,0.6),RGBA(255,247,197,0.6),RGBA(255,195,154,0.6),RGBA(255,198,198,0.6));
+    margin:auto;
+    margin-top: 10vh;
+    padding: 3vh 3vw;
+    overflow: auto;
+    border-radius: 2vh/1vw
+}

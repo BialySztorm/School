@@ -1,0 +1,5 @@
+AM; 4 / 10 pkt; ocena: 1
+Andrzej Manderla; 10 / 10 pkt; ocena: 5
+BialySztorm; 6 / 10 pkt; ocena: 2
+Andrzej Man; 3 / 10 pkt; ocena: 1
+Andrz Man; 10 / 10 pkt; ocena: 5

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/hamburger.css">
+        <link rel="stylesheet" href="../css/slide.css">
+        <meta name="author" content="kroksy">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../grafika/logo1.png">
+    </head>
+    <body>
+        <div class="hamburger"><div></div></div>
+        <div id="nawigacja" class="nawigacja">
+            <iframe src="nawigacja.html"></iframe>
+        </div>
+        <div id="wszechno">
+            <div id="o_nas">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="../grafika/img1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="../grafika/img2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="../grafika/img3.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div> <br>
+                <div style="text-align: center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <script src="../js/slide.js"></script>
+            </div>
+        </div>
+        <div class="napis">
+            Strona powstała w ramach wydarzenia Hackathon.
+            <br><br>
+            Wierzymy że w naszej szkole możemy usprawnić sposób zamawiania lunchu i wyjść na przeciw potrzebom i oczekiwaniom głodnych uczniów Sobieskiego. Chcielibyśmy zoptymalizować pracę Sklepiku szkolnego, wierzymy że nasza strona zmieni rzeczywistość na przerwach i zredukuje poważny problem kolejek 
+            <br><br>
+            Autorzy: Aleksandra Bryja, Dawid Krok, Andrzej Manderla
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/hamburger.js"></script>
+    </body>
+</html>

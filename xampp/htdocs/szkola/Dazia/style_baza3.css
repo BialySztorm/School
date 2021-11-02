@@ -1,0 +1,55 @@
+#button {
+  background-color: deepskyblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+input {
+  background-color: lightblue;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+body {
+    background-image: url(4e258549544322d084b6352dc7c40818.jpg);
+}
+
+div {
+    width: 900px;
+    height: 600px;
+    background-color: rgba(255,255,255,0.8);
+    margin: auto;
+    overflow-x: auto;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form, span{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+table {
+    margin:auto;
+}
+
+td {
+    
+    border: blue 3px solid;
+}
