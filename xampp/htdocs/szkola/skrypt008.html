@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style008.css">
+    <link rel="icon"
+        href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c02482cf-026d-4039-996e-dbd1da37794c/d8u1sq2-86243a29-c187-4398-a367-db35a14991f7.png/v1/fill/w_184,h_184,q_80,strp/steam_bloody_unicorn_by_xfinaal_d8u1sq2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xODQiLCJwYXRoIjoiXC9mXC9jMDI0ODJjZi0wMjZkLTQwMzktOTk2ZS1kYmQxZGEzNzc5NGNcL2Q4dTFzcTItODYyNDNhMjktYzE4Ny00Mzk4LWEzNjctZGIzNWExNDk5MWY3LnBuZyIsIndpZHRoIjoiPD0xODQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.WEs_SuW1VaeVtRAsNMEjrnj3mahk6TGAkXkGjy53rFs"
+        type="image/x-icon" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="tlo"></div>
+    <div class="calosc">
+        <form action="skrypt008.php" method="post">
+            <div class="tytul">Test wiedzy</div>
+            <div class="pytanie">Jeśli chcesz to wprowadź link do własnego testu(surowy)
+                <input type="text" name="pytania" value="pytania.txt" class="textarea"></div>
+            <div class="pytanie">Oraz klucz odpowiedzi(surowy)
+                <input type="text" name="odpowiedzi" value="klucz.txt" class="textarea"></div>
+            <div class="pytanie">A także plik w którym mam zapisać punkty(surowy z możliwością edycji)
+                <input type="text" name="punkty" value="punkty.txt" class="textarea"></div>
+            <input type="submit" value="Generuj" class="enter">
+
+        </form>
+
+        <form method="post" action="wyniki.php">
+            <div class="pytanie">Plik z punktami(surowy)
+                <input type="text" name="punkty" value="punkty.txt" class="textarea"></div>
+            <div class="pytanie">
+                Aby sprawdzić dotyczhcasowe odpowiedzi Kliknij przycisk poniżej:
+            </div>
+            <input type="submit" value="Sprawdź wyniki" class="enter">
+        </form>
+
+    </div>
+    <div class="link"><a class="alink" href="https://github.com/BialySztorm/Test">?</a></div>
+</body>
+
+</html>

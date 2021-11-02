@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="skrypty_style/012.css">
+    <meta charset="UTF-8">
+</head>
+
+<body id="first">
+    <div>Dodawanie rekordów</div>
+    <iframe id="i1" class="refresh" src="skrypty_style/012-form.php"></iframe>
+    <div>Wyświetlanie rekordów</div>
+    <iframe id="i2" class="refresh" src="skrypty_style/012-show.php"></iframe>
+    <div>Edycja rekordów</div>
+    <iframe id="i3" class="refresh" src="skrypty_style/012-change.php"></iframe>
+    <div>Usuwanie rekordów</div>
+    <iframe id="i4" class="refresh" src="skrypty_style/012-delete.php"></iframe>
+    <div id="refresh" onclick="refresh()"></div>
+    <script>
+        function refresh(){
+            var refreshRef = document.getElementsByClassName('refresh');
+            refreshRef[0].src = "skrypty_style/012-form.php";
+            refreshRef[1].src = "skrypty_style/012-show.php";
+            refreshRef[2].src = "skrypty_style/012-change.php";
+            refreshRef[3].src = "skrypty_style/012-delete.php";
+        }
+    </script>
+</body>
+
+</html>

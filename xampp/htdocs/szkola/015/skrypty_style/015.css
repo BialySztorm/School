@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+*{
+    font-family: 'Texturina', serif;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+td, input, select{
+    border:2px #B1A7A6 solid;
+    background-color: #F5F3F4;
+    padding:1vh 1vw;
+}
+tr{
+    color:#0B090A;
+}
+input, select{
+    color:black;
+    width:18%;
+}
+table{
+    margin:auto;
+    opacity: 0.8;
+    border-spacing: 1vh;
+}
+form{
+    text-align: center;
+}
+body#first{
+    background-image:linear-gradient(#161A1D,#660708,#A4161A,#BA181B);
+    text-align: center;
+    margin: 0px;
+    color: #B1A7A6;
+}
+iframe{
+    width: 80vw;
+    margin:1vw;
+    border: none;
+}
+.i1{
+    height: 10vh;
+}
+.i2{
+    height: 60vh;
+    width: 95vw;
+}
+.i3{
+    height: 12vh;
+}
+#refresh{
+    background-image: url("../refresh.png");
+    position: fixed;
+    background-size: cover;
+    top: 2vw;
+    right: 2vw;
+    width: 5vw;
+    height: 5vw;
+    filter: hue-rotate(270deg);
+}

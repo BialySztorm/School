@@ -1,0 +1,52 @@
+
+*{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 20px;
+}
+td, input, select{
+    border:2px black solid;
+    background-color: #F5FDC6;
+    padding:10px;
+}
+tr{
+    color:black;
+}
+input, select{
+    color:black;
+    width:18%;
+}
+
+table{
+    margin:auto;
+    border-spacing: 1vh;
+    opacity: 0.8;
+}
+form{
+    text-align: center;
+}
+body#menu{
+    background-color: #A89F68;
+    text-align: center;
+    margin: 0px;
+}
+body#show, body#form{
+    text-align: center;
+    background-color: #A89F68;
+}
+
+#Button1, #Button2{
+    background-color: #41521F;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* https://coolors.co/f5fdc6-f5c396-d0b17a-a89f68-41521f */

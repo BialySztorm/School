@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+*{
+    font-family: 'Texturina', serif;
+    font-weight: bolder;
+    /* font-size: 2vw; */
+}
+.zespol,td,th, input, select, button{
+    background-color: #CED4DA;
+    border: 2px solid #495057;
+    padding: 1vw;
+    margin:1vw;
+}
+.zespol{
+    width: 50vw;
+}
+.ratownicy, .dyspozytorzy{
+    width: 40vw;
+    text-align: left;
+}
+body{
+    margin: 0%;
+    text-align: center;
+    background-image:linear-gradient(#6c757d,#ADB5BD,#CED4DA);}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    background-color: rgba(173, 181, 189,0.8);
+}
+.footer>div{
+    display: inline-block;
+    color: #495057;
+    font-size: 1vw;
+    margin: 1vw 3vw;
+    cursor: pointer;
+}

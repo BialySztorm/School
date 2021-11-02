@@ -1,0 +1,53 @@
+#Liczba odpowiedzi:
+4
+Ile wiesz o HTML, CSS i PHP?
+Pytanie 1: Kto Stworzył HTML?
+A - Steve Jobs
+B - Tim Berners-Lee
+C - Tim Cook
+D - Robert Cailliau
+Pytanie 2: Jaką mamy obecnie wersję HTML? 
+A - HTML 7
+B - HTML 5
+C - HTML 4
+D - HTML 1
+Pytanie 3: W języku PHP, dla zmiennych a = 5 i b = 3 wartość typu zmiennoprzecinkowego zwróci wyrażenie
+A - a * b
+B - a + b
+C - a / b
+D - a && b
+Pytanie 4: Aby wykonać kod zapisany językiem PHP wystarczy, że w systemie zainstalowano
+A - serwer WWW z interpreterem PHP
+B - serwer WWW z serwerem MySQL
+C - przeglądarkę internetową
+D - serwer WWW, parser PHP oraz serwer MySQL
+Pytanie 5: Aby w pliku z rozszerzeniem php umieścić kod w języku PHP należy użyć znaczników
+A - < php > .......... < /php >
+B - < ?php .......... ? >
+C - < php .......... / >
+D - < ?php > .......... < php? >
+Pytanie 6: Jaką mamy teraz wersję CSS?
+A - CSS4
+B - CSS3
+C - CSS2
+D - CSS
+Pytanie 7: Do czego służy CSS?
+A - Programowanie gier
+B - Programowanie aplikacji webowych
+C - Do opisywania elementów na stronie
+D - Do opisywania elementów wyglądu pulpitu
+Pytanie 8: Jaki jest kod na tło strony?
+A - bground-color
+B - background-image
+C - background-color
+D - bgcolor
+Pytanie 9: Jaka organizacja napisała CSS?
+A - Samsung
+B - W3C
+C - Microsoft
+D - Apple
+Pytanie 10: Kod języka CSS można umieścić wewnątrz kodu HTML, posługując się znacznikiem:
+A - < head >
+B - < meta >
+C - < body >
+D - < style >

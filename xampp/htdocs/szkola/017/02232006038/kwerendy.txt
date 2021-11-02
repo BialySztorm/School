@@ -1,0 +1,3 @@
+zapytanie 1: SELECT samochody.id, samochody.marka, samochody.model FROM samochody
+zapytanie 2: SELECT zamowienia.Samochody_id, zamowienia.Klient FROM zamowienia
+zapytanie 3: SELECT * FROM samochody WHERE samochody.marka = "Fiat"

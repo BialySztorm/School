@@ -1,5 +1,5 @@
 *.zip
 *.mp3
 *.mp4
-xampp/
+xampp/*
 !xampp/htdocs
