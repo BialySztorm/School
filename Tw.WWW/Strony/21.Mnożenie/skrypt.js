@@ -15,8 +15,8 @@ for (i = 0; i < liczbaAnanasow; i++) {
 const tablicaAnanasow = document.getElementsByClassName("ananasy")
 var zdobyteAnanasy = 0
 function randNumbers() {
-    a.innerHTML = Math.round(Math.random() * 10%9+1)
-    b.innerHTML = Math.round(Math.random() * 10%9+1)
+    a.innerHTML = Math.round(((Math.random() * 10) % 9) + 1)
+    b.innerHTML = Math.round(((Math.random() * 10) % 9) + 1)
 }
 
 function check() {
@@ -25,8 +25,8 @@ function check() {
     if (ans.value == tmp1 * tmp2) {
         corr.innerHTML = parseInt(corr.innerHTML) + 1
         if (!(parseInt(corr.innerHTML) % 5)) {
-                tablicaAnanasow[zdobyteAnanasy].src = "img/anok2.png"
-                zdobyteAnanasy += 1
+            tablicaAnanasow[zdobyteAnanasy].src = "img/anok2.png"
+            zdobyteAnanasy += 1
         }
     } else {
         uncorr.innerHTML = parseInt(uncorr.innerHTML) + 1

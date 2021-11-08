@@ -1,22 +1,22 @@
-body{
-    background-color: #F7F7F7;
+body {
+    background-color: #f7f7f7;
     margin: 0;
     text-align: center;
 }
-.header{
+.header {
     font-size: 3vw;
-    color: #005F1D;
+    color: #005f1d;
 }
-.qanda{
+.qanda {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
     font-size: 3vw;
 }
 
-.score{
+.score {
     display: flex;
     flex-direction: row;
     width: 30vw;
@@ -24,50 +24,53 @@ body{
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    font-size: 2.5vw;
 }
-.ananasek1{
+.ananasek1 {
     font-size: 1.5vw;
 }
-.ananasy{
+.ananasy {
     height: 4vw;
     background-size: contain;
 }
-.score>div{
+.score > div {
     width: 9vw;
     height: 6vw;
     background-size: contain;
     background-repeat: no-repeat;
+    vertical-align: center;
+    padding-top: 1vw;
 }
-.avg{
-    background-image: url('img/odp_p.png');
+.avg {
+    background-image: url("img/odp_p.png");
 }
-.corr{
-    background-image: url('img/odp_ok.png');
+.corr {
+    background-image: url("img/odp_ok.png");
 }
-.uncorr{
-    background-image: url('img/odp_no.png');
+.uncorr {
+    background-image: url("img/odp_no.png");
 }
-.turtle{
-    background-image: url('img/but_3.png');
+.turtle {
+    background-image: url("img/but_3.png");
     width: 15vw;
     height: 16vw;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    top:40vh;
+    top: 40vh;
 }
-.palma{
+.palma {
     width: 100vw;
     background-size: contain;
     background-position: bottom;
     height: 100vh;
-    background-image: url('img/palma200pc.png');
+    background-image: url("img/palma200pc.png");
     background-repeat: no-repeat;
     position: fixed;
     bottom: 0;
     z-index: -1;
 }
-input{
+input {
     font-size: 3vw;
     width: 6vw;
 }
