@@ -7,7 +7,8 @@ const a = document.getElementsByClassName("a")[0],
     btn = document.getElementsByClassName("turtle")[0],
     ansBanner = document.getElementsByClassName("answer")[0],
     ananasy = document.getElementsByClassName("ananasek")[0],
-    liczbaAnanasow = 10
+    ansSpan = document.querySelector(".answer span")
+liczbaAnanasow = 10
 for (i = 0; i < liczbaAnanasow; i++) {
     ananasy.innerHTML +=
         "<img src='img/an.png' alt='ananas" + i + "' class='ananasy'>"
@@ -28,8 +29,18 @@ function check() {
             tablicaAnanasow[zdobyteAnanasy].src = "img/anok2.png"
             zdobyteAnanasy += 1
         }
+        ansBanner.classList.remove("uncorrB")
+        ansBanner.classList.add("corrB")
     } else {
         uncorr.innerHTML = parseInt(uncorr.innerHTML) + 1
+        ansBanner.classList.remove("corrB")
+        ansBanner.classList.add("uncorrB")
+        ansSpan.innerHTML =
+            a.innerHTML +
+            " * " +
+            b.innerHTML +
+            " = " +
+            parseInt(a.innerHTML) * parseInt(b.innerHTML)
     }
     avg.innerHTML =
         parseInt(
@@ -43,6 +54,12 @@ function check() {
     ans.value = ""
     randNumbers()
 }
+ans.addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        check()
+    }
+})
 
 btn.onclick = check
 
