@@ -28,7 +28,7 @@
     </div>
     <div>
         <img src="ryba1.jpg" alt="sum">
-        <div><a href="02232006038/kwerendy.txt">Pobierz kwerendy</a></div>
+        <div><a href="02232006038/kwerendy.txt" download>Pobierz kwerendy</a></div>
     </div>
     </section>
     <footer>
