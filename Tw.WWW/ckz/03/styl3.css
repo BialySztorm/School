@@ -1,6 +1,14 @@
 .all>img{
-    width: 200px;
+    height: 20vh;
+    width: 20vh;
 }
 .output, .all{
     text-align: center;
+}
+div>div{
+    display: inline;
+    font-size: 4em;
+}
+.output>img{
+    height: 75vh;
 }
