@@ -1,0 +1,31 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0;
+}
+footer, header{
+    background-color: #4682B4;
+    color: white;
+    padding: 20px;
+    font-size: 120%;
+    text-align: center;
+}
+section{
+    display: flex;
+}
+section>div{
+    background-color: #40E0D0;
+    height: 500px;
+}
+section>div:nth-child(1){
+    width: 40%;
+}
+section>div:nth-child(2){
+    width: 60%;
+}
+img{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #000080;
+}

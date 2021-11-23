@@ -1,0 +1,7 @@
+SELECT `ryby`.`nazwa`, `ryby`.`wystepowanie` FROM `ryby` WHERE `ryby`.`styl_zycia` = '1';
+
+SELECT `okres_ochronny`.`Ryby_id`, `okres_ochronny`.`wymiar_ochronny` FROM `okres_ochronny` WHERE `okres_ochronny`.`wymiar_ochronny` < '50';
+
+SELECT `ryby`.`nazwa`, `lowisko`.`akwen`, `lowisko`.`wojewodztwo` FROM `ryby` INNER JOIN `lowisko` ON `lowisko`.`Ryby_id` = `ryby`.`id`
+
+ALTER TABLE `ryby` ADD `dobowy_limit` INT NOT NULL AFTER `styl_zycia`;
