@@ -55,30 +55,32 @@ function randNumbers() {
     }
 }
 
-for (i = 0; i < ans.length; i++) {
-    ans[i].onclick = function () {
-        var tmp1 = parseInt(a.innerHTML),
-            tmp2 = parseInt(b.innerHTML)
-        if (parseInt(this.innerHTML) == tmp1 * tmp2) {
-            corr.innerHTML = parseInt(corr.innerHTML) + 1
-            ansBanner.classList.remove("uncorrB")
-            ansBanner.classList.add("corrB")
-            randNumbers()
-        } else {
-            uncorr.innerHTML = parseInt(uncorr.innerHTML) + 1
-            ansBanner.classList.remove("corrB")
-            ansBanner.classList.add("uncorrB")
-            this.style.display = "none"
-        }
-        avg.innerHTML =
-            parseInt(
-                (parseInt(corr.innerHTML) /
-                    (parseInt(corr.innerHTML) + parseInt(uncorr.innerHTML))) *
-                    100
-            ) + "%"
-        
+function checkAns(answer) {
+    var tmp1 = parseInt(a.innerHTML),
+        tmp2 = parseInt(b.innerHTML)
+    if (parseInt(answer.innerHTML) == tmp1 * tmp2) {
+        corr.innerHTML = parseInt(corr.innerHTML) + 1
+        ansBanner.classList.remove("uncorrB")
+        ansBanner.classList.add("corrB")
+        randNumbers()
+    } else {
+        uncorr.innerHTML = parseInt(uncorr.innerHTML) + 1
+        ansBanner.classList.remove("corrB")
+        ansBanner.classList.add("uncorrB")
+        answer.style.display = "none"
     }
+    avg.innerHTML =
+        parseInt(
+            (parseInt(corr.innerHTML) /
+                (parseInt(corr.innerHTML) + parseInt(uncorr.innerHTML))) *
+                100
+        ) + "%"
 }
 
+for (i = 0; i < ans.length; i++) {
+    ans[i].onclick = function () {
+        checkAns(this)
+    }
+}
 
 randNumbers()
