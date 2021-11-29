@@ -1,0 +1,70 @@
+body {
+    margin: 0%;
+}
+
+#baner {
+    background-color: #62afff;
+    height: 80px;
+    font-size: 120%;
+    text-align: center;
+}
+
+#glowny {
+    display: flex;
+}
+
+#lewy {
+    background-color: #44d6e8;
+    height: 450px;
+    width: 30%;
+    font-size: 120%;
+}
+
+#main {
+    height: 450px;
+    width: 40%;
+    text-align: center;
+}
+
+#prawy {
+    float: left;
+    background-color: #44d6e8;
+    height: 450px;
+    width: 30%;
+    font-size: 120%;
+    text-align: center;
+}
+
+footer {
+    background-color: #62afff;
+    height: 50px;
+    text-align: center;
+}
+
+table {
+    margin-left: 50px;
+
+}
+
+td {
+    border: solid 1px yellow;
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+}
+
+td:hover {
+    color: yellow;
+}
+
+h3, img {
+    margin-top: 100px;
+}
+
+img {
+    float: left;
+}
+
+input {
+    margin-top: 10px;
+}

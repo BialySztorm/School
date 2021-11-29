@@ -1,0 +1,7 @@
+SELECT nazwa, cena FROM towary where id='1' OR id='2' OR id='3' or id='4'
+
+SELECT cena FROM towary where nazwa='cyrkiel'
+
+SELECT nazwa from towary
+
+SELECT towary.promocja, COUNT(towary.promocja) as 'ilosc' from towary group by towary.promocja
