@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Stacja paliw</title>
+        <link rel="stylesheet" href="styl3.css" />
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Stacja Paliw</h1>
+            </div>
+            <div>
+                <a href="stacja.html"><img src="home.png" /></a>
+                <a href="obliczenia.html "><img src="znak.png" /></a>
+            </div>
+        </div>
+        <div>
+            <h3>Oblicz koszt paliwa</h3>
+            <p>Rodzaj paliwa (1-benzyna, 2-olej napędowy):</p>
+            <input type="number" id="type" />
+            <p>Ile litrów</p>
+            <input type="number" id="amount" />
+            <br />
+            <input type="button" id="count" value="OBLICZ" />
+            <p id="score"></p>
+        </div>
+        <div>
+            <div>
+                <a href="kwerendy.txt" download>Pobierz kwerendy</a>
+            </div>
+            <div>
+                <img src="samochod.png" alt="samochód" />
+            </div>
+        </div>
+        <div>
+            <p>Stronę opracował: Andrzej Manderla</p>
+        </div>
+
+        <script>
+            const typ = document.getElementById("type"),
+                ilosc = document.getElementById("amount"),
+                guzik = document.getElementById("count"),
+                wynik = document.getElementById("score")
+
+            guzik.onclick = function () {
+                if (typ.value == 1)
+                    wynik.innerHTML = "koszt paliwa: " + ilosc.value * 4 + " zł"
+                else if (typ.value == 2)
+                    wynik.innerHTML =
+                        "koszt paliwa: " + ilosc.value * 3.5 + " zł"
+                else wynik.innerHTML = "koszt paliwa: " + 0 + " zł"
+            }
+        </script>
+    </body>
+</html>

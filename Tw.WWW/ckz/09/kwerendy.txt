@@ -1,0 +1,7 @@
+SELECT `samochody`.`marka`, `samochody`.`model` FROM `samochody` WHERE `samochody`.`kolor` = 'czerwony';
+
+UPDATE `samochody` SET `stan` = 'dobry' WHERE `samochody`.`rocznik` = 2007;
+
+CREATE USER 'andrzej'@'localhost' IDENTIFIED VIA mysql_native_password USING 'andrzej1@';GRANT USAGE ON *.* TO 'andrzej'@'localhost' ;
+
+GRANT SELECT, UPDATE ON `samochody`.`samochody` TO 'andrzej'@'localhost';
