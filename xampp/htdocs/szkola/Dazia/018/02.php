@@ -1,5 +1,5 @@
 <?php
-$file =  "parzystePrzez3.txt";
+$file =  "02.txt";
 $handle = fopen($file, "w");
 $tmp = "";
 for($i = 2; $i<=1000; $i+=2)
