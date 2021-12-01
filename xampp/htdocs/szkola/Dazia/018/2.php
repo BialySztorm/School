@@ -20,7 +20,7 @@
         <input type="submit">
     </form>
     <?php
-    $file = "05.txt";
+    $file = "2.txt";
     if (isset($_POST["comment"])) {
         $tmp = "";
         if (filesize($file)) {
