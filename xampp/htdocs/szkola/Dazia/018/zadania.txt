@@ -1,0 +1,20 @@
+Zadanie 1.
+
+Napisz skrypt, który będzie odczytywał zawartość wskazanego katalogu, a odczytane elementy podzieli na pliki i katalogi, 
+i wyświetli je w kolejności: wszystkie katalogi, następnie wszystkie pliki. W skrypcie wykorzystaj funkcje is_file() oraz is_dir().
+
+Napisz skrypt, który wpisze do pliku liczby parzyste i podzielne przez 3 z przedziału od 1 do 1000, a następnie odczyta zawartość 
+pliku i wyświetli go w oknie przeglądarki.
+
+Napisz skrypt odczytujący cztery liczby zapisane w pliku tekstowym (każda w osobnej linii) i wypisujący je w oknie przeglądarki 
+w kolejności malejącej.
+
+Napisz skrypt zapisujący do pliku 10 losowych liczb z przedziału od 0 do 100. Odczytaj z pliku największą z wylosowanych liczb.
+
+
+Zadanie 2.
+
+Poznane mechanizmy pracy z plikami wykorzystaj tworząc skrypt dodawania przez użytkowników na stronie internetowej komentarze 
+na wybrany temat. Utworzony skrypt ma zapisywać opinie użytkowników w pliku tekstowym opinie.txt. Na stronie wyświetl formularz, 
+który pozwoli na wpisanie opinii. Nowa opinia zostanie umieszczona na końcu pliku. Dotychczasowe opinie zapisane w pliku będą 
+wyświetlane na stronie i będą dostępne dla innych użytkowników witryny.
