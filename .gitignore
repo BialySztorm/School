@@ -3,3 +3,6 @@
 *.mp4
 xampp/*
 !xampp/htdocs
+!xampp/mysql
+xampp/mysql/*
+!xampp/mysql/data
