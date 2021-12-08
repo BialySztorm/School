@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    background-color: #efd0ca;
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+    color: #5c7457;
+    margin: 2vw;
+}
+.banner {
+    height: 8vw;
+    margin: 2vw;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    &__img {
+        width: 8vw;
+        height: 8vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        display: none;
+        padding: 2vw;
+    }
+    &--good {
+        background-color: #5c745856;
+        & > div.banner__img {
+            background-image: url("../img/ok1.png");
+        }
+        & > div.banner__text {
+            display: none;
+        }
+    }
+    &--bad {
+        background-color: #ad483450;
+        & > div.banner__img {
+            background-image: url("../img/z1.png");
+        }
+        & > div.banner__text {
+            display: inline;
+        }
+    }
+}
+.question {
+    height: 5vw;
+    margin: 2vw;
+    text-align: center;
+    color: #979b8d;
+    font-size: 2.5em;
+}
+.answer {
+    display: flex;
+    justify-content: center;
+    &__content {
+        margin: 2vw;
+        background-color: #214e34ce;
+        color: #979b8d;
+        width: 10vw;
+        height: 7vw;
+        padding: 2vw;
+        font-size: 3em;
+        text-align: center;
+        &:hover{
+            background-color: #163523ce;
+        }
+    }
+}
+.score {
+    display: flex;
+    justify-content: center;
+    &__content {
+        width: 5vw;
+        height: 2vw;
+        margin: 2vw;
+        color: #c4c6be;
+        text-align: center;
+        font-size: 2em;
+        padding: 1vw;
+        &--avg {
+            background-color: #9f977f;
+        }
+        &--good {
+            background-color: #6f8c69;
+        }
+        &--bad {
+            background-color: #bc4e38;
+        }
+    }
+}
