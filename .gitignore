@@ -8,3 +8,4 @@ xampp/*
 xampp/mysql/*
 !xampp/mysql/data
 desktop.ini
+
