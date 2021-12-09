@@ -4,6 +4,7 @@
 xampp/*
 !xampp/htdocs
 !xampp/mysql
+!xampp/locale
 xampp/mysql/*
 !xampp/mysql/data
 desktop.ini
