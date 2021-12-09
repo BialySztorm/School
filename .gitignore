@@ -1,9 +1,9 @@
 *.zip
 *.mp3
 *.mp4
-*.ini
 xampp/*
 !xampp/htdocs
 !xampp/mysql
 xampp/mysql/*
 !xampp/mysql/data
+desktop.ini
