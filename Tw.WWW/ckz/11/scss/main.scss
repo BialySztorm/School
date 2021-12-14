@@ -9,8 +9,8 @@ body {
     margin: 2vw;
 }
 .banner {
-    height: 8vw;
-    margin: 2vw;
+    height: 7vw;
+    margin: 1vw;
     text-align: center;
     font-size: 1.5em;
     display: flex;
@@ -46,8 +46,8 @@ body {
     }
 }
 .question {
-    height: 5vw;
-    margin: 2vw;
+    height: 4vw;
+    margin: 1vw;
     text-align: center;
     color: #979b8d;
     font-size: 2.5em;
@@ -61,8 +61,8 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        width: 10vw;
-        height: 7vw;
+        width: 15vw;
+        height: 12vw;
         padding: 2vw;
         font-size: 3em;
         text-align: center;
@@ -76,8 +76,10 @@ body {
             position:relative;
             top:20%;
             left: calc(50% - 4px);
+            transition: 1s transform;
             transform-origin: bottom;
             transform: rotate(20deg);
+            
         }
         &--min{
             width: 2px;
@@ -86,6 +88,7 @@ body {
             position: relative;
             left: calc(50% - 4px);
             top:-38%;
+            transition: 1s transform;
             transform-origin: bottom;
             transform: rotate(270deg);
         }

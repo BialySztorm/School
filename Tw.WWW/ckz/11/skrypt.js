@@ -31,7 +31,7 @@ function shuffle(array) {
 }
 
 function randNum() {
-    curr[0] = Math.round(Math.random() * 12)
+    curr[0] = Math.round(Math.random() * 11)+1
     curr[1] = Math.round(Math.random() * 11)*5
     if(curr[1]<10)
     question.innerHTML = curr[0]+":0"+curr[1]
@@ -40,7 +40,7 @@ function randNum() {
     // console.log(curr)
     tmp1 = [curr]
     for (i = 0; i < answers.length - 1; i++) {
-        tmp2 = Math.round(Math.random() * 12)
+        tmp2 = Math.round(Math.random() * 11)+1
         tmp3 = Math.round(Math.random() * 11)*5
         check = 0
         // *Sprawdzanie czy dana liczba nie jest już w tablicy
@@ -57,6 +57,8 @@ function randNum() {
         }
     }
     tmp1 = shuffle(tmp1)
+
+    console.log('%cAnswers:','background: red; color: #bada55')
     console.log(tmp1)
     for (i = 0; i < answers.length; i++) {
         answers[i].childNodes[1].style.transform = "rotate("+(30*tmp1[i][0]+30/12*tmp1[i][1]/5)+"deg)"
