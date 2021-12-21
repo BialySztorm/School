@@ -62,7 +62,7 @@ function randNum() {
     console.log(tmp1)
     for (i = 0; i < answers.length; i++) {
         answers[i].childNodes[1].style.transform = "rotate("+(30*tmp1[i][0]+30/12*tmp1[i][1]/5)+"deg)"
-        answers[i].childNodes[3].style.transform = "rotate("+(30*tmp1[i][1]/5)+"deg)"
+        answers[i].childNodes[3].style.transform = "rotate("+(30*tmp1[i][1]/5+tmp1[i][0]*360)+"deg)"
         answers[i].setAttribute('hour', tmp1[i][0])
         answers[i].setAttribute('min', tmp1[i][1])
         

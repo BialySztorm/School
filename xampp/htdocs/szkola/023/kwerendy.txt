@@ -1,0 +1,7 @@
+SELECT uczen.imie, uczen.nazwisko FROM uczen
+
+SELECT uczen.imie, uczen.nazwisko FROM uczen WHERE uczen.id = 2
+
+SELECT ocena.ocena FROM ocena WHERE ocena.uczen_id = 2 AND ocena.przedmiot_id  = 1
+
+SELECT AVG(ocena.ocena) FROM ocena WHERE ocena.uczen_id = 2 AND ocena.przedmiot_id  = 1
