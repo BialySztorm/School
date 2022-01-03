@@ -13,8 +13,10 @@
         <?php
         $connection = mysqli_connect("localhost", "root");
         mysqli_select_db($connection, "baza");
-        if (isset($_COOKIE['username']) && mysqli_fetch_assoc(mysqli_query($connection,"SELECT count(tokens.token) AS isToken FROM tokens WHERE  tokens.token = '".$_COOKIE['username']."'"))['isToken'] !=0) {
+        if (isset($_COOKIE['username']) && mysqli_fetch_assoc(mysqli_query($connection, "SELECT count(tokens.token) AS isToken FROM tokens WHERE  tokens.token = '" . $_COOKIE['username'] . "'"))['isToken'] != 0) {
             header("Location: secret.php");
+        } else if (isset($_COOKIE['username'])){
+            setcookie("username", $_COOKIE['username'], time() - 300);
         }
         mysqli_close($connection);
         ?>

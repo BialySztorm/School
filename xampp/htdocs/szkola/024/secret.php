@@ -14,7 +14,7 @@
         <?php
         $connection = mysqli_connect("localhost", "root");
         mysqli_select_db($connection, "baza");
-        if (isset($_POST['email']) && isset($_POST['password'])) {
+        if (isset($_POST['email']) && isset($_POST['password']) && !isset($_COOKIE['username'])) {
             $email = $_POST['email'];
             $password = $_POST['password'];
             $good = false;
