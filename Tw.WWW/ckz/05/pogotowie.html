@@ -28,7 +28,7 @@
                 <div>Adres:</div>
                 <input type="text" size="100" name="adres">
                 <br>
-                <input type="button" value="WYCZYŚĆ" id="clear">
+                <input type="reset">
                 <input type="submit" value="ZGŁOŚ">
             </form>
         </div>
@@ -45,15 +45,6 @@
         <div>
             <p>Autor<br>Andrzej Manderla</p>
         </div>
-        <script>
-            var items = document.getElementsByTagName("input")
-            document.getElementById("clear").onclick = function() {
-                for(i = 0;i<3; i++)
-                {
-                    items[i].value = ""
-                }
-            }
-        </script>
     </footer>
 </body>
 
