@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styl1.css">
+    <title>Filmy</title>
+</head>
+<body>
+    <div id="glowny">
+<div id="lewy">
+<h3>Dostępne gatunki filmu:</h3>
+<ol>
+    <li>Sci-fi</li>
+    <li>animacja</li>
+    <li>dramat</li>
+    <li>horror</li>
+    <li>komedia</li>
+</ol>
+<a href="kadr.jpg">Pobierz obraz</a> <br>
+<a href="repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a>
+</div>
+
+
+
+    <div id="one"> <h1>FILMOTEKA</h1></div>
+
+    <div id="two">
+        <form action="dodaj.php" method="post">
+            <label for="tytul"> Tytuł</label> <input type="text" name="tytul"> <br>
+            <label for="gatunek"> Gatunek</label> <input type="number" name="gatunek"> <br>
+            <label for="rok"> Rok produkcji</label> <input type="number" name="rok"> <br>
+            <label for="ocena"> Ocena</label> <input type="number" name="ocena"> <br>
+            <input type="reset" value="CZYŚĆ"> 
+            <input type="submit" value="DODAJ"> <br>
+        </form>
+
+    </div>
+
+    <div id="three"> <img src="kadr.jpg" alt="zdjecia filmowe"></div>
+
+</div>
+
+<footer> <p> Autor strony:Daria Durkowska</p></footer>
+</body>
+</html>

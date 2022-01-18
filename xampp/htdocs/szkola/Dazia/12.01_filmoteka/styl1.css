@@ -1,0 +1,63 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    margin: 0%;
+}
+/* #glowny {
+display: flex;
+} */
+
+
+#lewy {
+    background-color: navy;
+    color: white;
+    width: 25%;
+    float: left ;
+    height: 700px;
+}
+
+#one {
+    background-color: royalblue;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+    float: right;
+}
+
+#two {
+    background-color: steelblue;
+    height: 300px;
+    width: 75%;
+    float: right;
+}
+
+#three {
+    background-color: royalblue;
+    height: 300px;
+    width: 75%;
+    text-align: center;
+    float: right;
+}
+
+footer {
+    background-color: steelblue;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+form{
+    padding: 30px;
+}
+
+input {
+    margin: 10px;
+}
+form:hover {
+    background-color: deepskyblue;
+}
