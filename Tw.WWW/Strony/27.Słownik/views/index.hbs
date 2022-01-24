@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -55,35 +54,25 @@
                         placeholder="Wpisz tłumaczenie"
                     />
                 </div>
-                <input type="button" class="addInput" value="+" />
+                <div class="menu__controls">
+                    <input type="button" class="removeInput" value="-" />
+                    <input type="button" class="addInput" value="+" />
+                </div>
                 <input
                     type="button"
-                    class="addTranslate"
+                    class="addTranslate menu__submit"
                     value="Dodaj tłumaczenie"
                 />
+                <div class="menu__err"></div>
             </div>
         </div>
         <div class="hamburger"><div></div></div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script>
-        dataFetch = (url, data={}, method="POST") => {
-            return fetch(url, {
-                method: method,
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            }).then(res => {
-                // if status code is 400~, 500~ throw error with the status number
-                if(!res.ok)     throw res.status
-                return res.json()        
-            })
-        }
-        </script>
-        <script src="resizeTxt.js"></script>
-        <script src="getData.js"></script>
-        <script src="addData.js"></script>
-        <script src="action.js" defer></script>
+        <script src="js/utils.js"></script>
+        <script src="js/resizeTxt.js"></script>
+        <script src="js/getData.js"></script>
+        <script src="js/addData.js"></script>
+        <script src="js/action.js" defer></script>
     </body>
 </html>

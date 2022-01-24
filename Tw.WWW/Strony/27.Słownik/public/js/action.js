@@ -5,8 +5,10 @@ const changeLanBtn = $(".language--button"),
     menu = $(".menu")[0],
     hamburger = $(".hamburger")[0],
     addBtn = $(".addTranslate")[0],
+    removeInputBtn = $(".removeInput")[0],
     addInputBtn = $(".addInput")[0],
-    inputs = $(".menu__inputs")[0]
+    inputs = $(".menu__inputs")[0],
+    err = $(".menu__err")[0]
 var output = $(".text--output")
 
 var hamburgerRotate = 0
@@ -70,6 +72,12 @@ hamburger.onclick = function () {
         hamburgerRotate = 0
     }
 }
+removeInputBtn.onclick = function () {
+    if (output.length > 2) {
+        output[output.length - 1].remove()
+        output = $(".text--output")
+    }
+}
 
 addInputBtn.onclick = function () {
     var newInput = document.createElement("input")
@@ -83,18 +91,26 @@ addInputBtn.onclick = function () {
 addBtn.onclick = function () {
     tmp1 = input[1].value
     tmp2 = []
+    tmp3 = []
     for (i = 1; i < output.length; i++) {
         if (output[i].value == "") {
-            alert("Nie wpisano nic")
-            break
+            tmp3.push(i)
         }
         tmp2.push(output[i].value)
-        output[i].value = ""
     }
-    input[1].value = ""
-    if (lanTxt[2].innerHTML == "Polski") {
-        addData("PL", tmp1, tmp2)
+    if (tmp1 == "") {
+        tmp3.push(0)
+    }
+    if (tmp3.length) {
+        err.innerHTML = "Wypełnij wszystkie pola."
     } else {
-        addData("EN", tmp1, tmp2)
+        input[1].value = ""
+        for (i = 1; i < output.length; i++) output[i].value = ""
+        if (lanTxt[2].innerHTML == "Polski") {
+            addData("PL", tmp1, tmp2)
+        } else {
+            addData("EN", tmp1, tmp2)
+        }
+        err.innerHTML = ""
     }
 }

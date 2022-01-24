@@ -5,7 +5,7 @@ writeFile = async (req, res) => {
         if (!req.body.json) return res.sendStatus(403)
 
         fs.writeFile(
-            "./public/dane" + req.body.lan + ".json",
+            "./public/data/dane" + req.body.lan + ".json",
             JSON.stringify(req.body.json),
             "utf8",
             (err) => {
@@ -16,7 +16,6 @@ writeFile = async (req, res) => {
     } catch (err) {
         res.sendStatus(500)
         console.log(err)
-        console.log(req.body.json)
     }
 }
 

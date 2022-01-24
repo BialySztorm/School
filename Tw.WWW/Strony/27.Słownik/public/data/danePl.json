@@ -1,0 +1,17 @@
+{
+    "words": [
+        { "word": "dane", "translate": ["data", "information's"] },
+        { "word": "imię", "translate": ["name", "first name"] },
+        { "word": "nazwisko", "translate": ["surname", "last name"] },
+        { "word": "twoje", "translate": ["yours"] },
+        { "word": "jest", "translate": ["is"] },
+        { "word": "piękne", "translate": ["beautiful"] },
+        { "word": "zdrowie", "translate": ["health"] },
+        { "word": "płeć", "translate": ["sex", "gender"] },
+        { "word": "mama", "translate": ["mom", "mother"] },
+        { "word": "polski", "translate": ["polish"] },
+        { "word": "angielski", "translate": ["english"] },
+        { "word": "pies", "translate": ["dog"] },
+        { "word": "dziecko", "translate": ["child"] }
+    ]
+}

@@ -1,7 +1,7 @@
 const output1 = $(".text--output")[0]
 
 function getData(text, lan) {
-    $.getJSON("dane" + lan + ".json", function (json) {
+    $.getJSON("/data/dane" + lan + ".json", function (json) {
         var good = false
         // console.log(json.words) // this will show the info it in firebug console
         for (var i = 0; i < json.words.length; i++) {

@@ -1,10 +1,23 @@
-* {
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$main-bg-clr:#fde8cd; 
+$main-clr:#433520;
+$menu-clr:#ebd4b6;
+$inputs-clr:#e9d6be8c;
+$inputs-border-clr:#025955;
+$buttons-hover-clr:#7086869f;
+$err-clr:#f0a08c;
+
+
+*:not(textarea),*:not(input){
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
 }
 body {
     text-align: center;
-    background-color: #fde8cd;
-    color: #433520;
+    font-size: openSans;
+    background-color: $main-bg-clr;
+    color: $main-clr;
 }
 .language {
     display: flex;
@@ -25,8 +38,8 @@ body {
 }
 .text {
     & > textarea {
-        background-color: #e9d6be8c;
-        border: #025955 solid 2px;
+        background-color: $inputs-clr;
+        border: $inputs-border-clr solid 2px;
         min-height: 15vw;
         padding: 1vw;
         font-size: 2em;
@@ -37,8 +50,8 @@ body {
     }
 }
 .translateBtn {
-    border: #025955 solid 2px;
-    background-color: #0259555e;
+    border: $inputs-border-clr solid 2px;
+    background-color: $inputs-clr;
     margin: auto;
     width: fit-content;
     padding: 1vw;
@@ -46,7 +59,7 @@ body {
     border: 2px solid black;
     border-radius: 2vw;
     &:hover {
-        background-color: #01494769;
+        background-color: $buttons-hover-clr;
         cursor: pointer;
     }
 }
@@ -56,7 +69,7 @@ div.hamburger {
     right: 0vw;
     width: 5vw;
     height: 5vw;
-    background-color: #ebd4b6;
+    background-color: $menu-clr;
     border-radius: 1vw 0 1vw 1vw;
     & > div {
         position: relative;
@@ -94,10 +107,11 @@ div.hamburger {
     position: fixed;
     top: 0px;
     right: -40vw;
-    height: 100vw;
+    height: 100vh;
     width: 40vw;
-    background-color: #ebd4b6;
+    background-color: $menu-clr;
     padding-top: 2vw;
+    border-radius: 2vw 0 0 2vw;
     & > div {
         margin: 0 12.5%;
         width: 75%;
@@ -107,8 +121,8 @@ div.hamburger {
         & > input {
             margin: 0.5vw;
             padding: 0.5vw;
-            background-color: #00917ca8;
-            border: #025955a8 2px solid;
+            background-color: $inputs-clr;
+            border: $inputs-border-clr 2px solid;
             border-radius: 1vw;
         }
     }
@@ -118,9 +132,33 @@ div.hamburger {
         & > input {
             margin: 0.5vw;
             padding: 0.5vw;
-            background-color: #00917ba8;
-            border: #025955a8 2px solid;
+            background-color: $inputs-clr;
+            border: $inputs-border-clr 2px solid;
             border-radius: 1vw;
         }
+    }
+    &__controls {
+        display: flex;
+        & > input {
+            width: 50%;
+            margin: 0.5vw;
+            padding: 0.5vw;
+            background-color: $inputs-clr;
+            border: $inputs-border-clr 2px solid;
+            border-radius: 1vw;
+            &:hover {
+                background-color: $buttons-hover-clr;
+                cursor: pointer;
+            }
+        }
+    }
+    &__submit{
+        &:hover {
+            background-color: $buttons-hover-clr;
+            cursor: pointer;
+        }
+    }
+    &__err{
+        color: $err-clr;
     }
 }
