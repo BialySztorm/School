@@ -8,10 +8,13 @@ $inputs-border-clr:#025955;
 $buttons-hover-clr:#7086869f;
 $err-clr:#f0a08c;
 
-
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
 *:not(textarea),*:not(input){
     user-select: none;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 body {
     text-align: center;
