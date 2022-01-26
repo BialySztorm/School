@@ -12,6 +12,7 @@
         { "word": "polski", "translate": ["polish"] },
         { "word": "angielski", "translate": ["english"] },
         { "word": "pies", "translate": ["dog"] },
-        { "word": "dziecko", "translate": ["child"] }
+        { "word": "dziecko", "translate": ["child"] },
+        { "word": "tata", "translate": ["father", "dad"] }
     ]
 }
