@@ -55,7 +55,7 @@ body {
             text-align: center;
             &>img{
                 width: 20vw;
-                height: 80%;
+                height: 90%;
                 object-fit: cover;
                 object-position: center;
             }
@@ -63,6 +63,7 @@ body {
         &--description{
             height: 20vw;
             padding: 2vw;
+            overflow-y: auto;
         }
     }
 }
