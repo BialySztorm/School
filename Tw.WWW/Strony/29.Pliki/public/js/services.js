@@ -39,5 +39,6 @@ function addData(name, description, file) {
 }
 
 function addFile(file) {
-    return "none"
+    sendFile({file:file})
+    return "/img/uploaded/"+file.value.replace(/.*[\/\\]/, '')
 }

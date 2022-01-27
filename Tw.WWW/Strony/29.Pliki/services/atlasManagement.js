@@ -29,7 +29,7 @@ addAnimal = async (req, res) => {
         if (!req.body.name || !req.body.description || !req.body.file)
             return res.sendStatus(400)
 
-        const Atlas = new Atlas({
+        const atlas = new Atlas({
             name: req.body.name,
             description: req.body.description,
             file: req.body.file,

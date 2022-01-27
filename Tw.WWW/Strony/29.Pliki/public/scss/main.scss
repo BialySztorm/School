@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 $nav-bg: #58B890;
 $nav-font :#2B644C;
+$atlas-border: black;
 
 body {
     margin: 0;
@@ -38,9 +39,30 @@ body {
             }
         }
     }
-    &__decline{
-        &>img{
-            height: 100%;
+}
+.atlas{
+    display: flex;
+    flex-direction: column;
+    &__container{
+        display: flex;
+        margin: 2vw;
+        border: 2px $atlas-border solid;
+        border-radius: 1vw;
+        padding: 1vw;
+        &--animal{
+            width: 20vw;
+            height: 20vw;
+            text-align: center;
+            &>img{
+                width: 20vw;
+                height: 80%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &--description{
+            height: 20vw;
+            padding: 2vw;
         }
     }
 }

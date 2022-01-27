@@ -11,3 +11,14 @@ dataFetch = (url, data={}, method="POST") => {
         return res.json()        
     })
 }
+
+
+sendFile =  (data={}) => {
+    const formData = new FormData()
+    formData.append("img", data.file.files[0])
+
+    fetch("/upload_img", { 
+        method: "POST",
+        body: formData
+    })
+}
