@@ -15,7 +15,9 @@ searchAnimals = async (req, res) => {
     if (!req.body.name) return res.sendStatus(403)
 
     try {
-        atlas_data = await Atlas.find({ name: req.body.name }).lean()
+        const s = req.body.name
+        const regex = new RegExp(s, "i")
+        atlas_data = await Atlas.find({name: {$regex: regex}}).lean()
 
         res.status(202).send(atlas_data)
     } catch (err) {
