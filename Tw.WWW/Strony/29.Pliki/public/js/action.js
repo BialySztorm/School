@@ -1,9 +1,20 @@
 $(document).ready(function () {
     $(".nav__add")[0].onclick = function () {
-        $(".add").css({ display: "block" })
+        $(".add").css({ display: "block" , animation: "showBlock 1s 1"})
         $(".title").css({ filter: "blur(2px)" })
         $(".nav").css({ filter: "blur(2px)" })
         $(".atlas").css({ filter: "blur(2px)" })
+    }
+    $(".add__remove")[0].onclick = function () {
+        $(".add").css({ animation: "hideBlock 0.5s 1"})
+        setTimeout(
+            function() 
+            {
+                $(".add").css({ display: "none"})
+                $(".title").css({ filter: "" })
+                $(".nav").css({ filter: "" })
+                $(".atlas").css({ filter: "" })
+            }, 480)
     }
 
     $(".nav__search--btn")[0].onclick = function () {
