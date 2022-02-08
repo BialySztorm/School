@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <title>Konwerter liczb</title>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="converter">
+            <div class="converter__line">
+                <input type="number" class="converter--input" placeholder="Liczba 1">
+                <select class="converter--option" line="1">
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option selected>10</option>
+                    <option>12</option>
+                    <option>16</option>
+                </select>
+            </div>
+            <div class="converter__line">
+                <select class="converter--operation" >
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                    <option value="3">*</option>
+                    <option value="4">/</option>
+                </select>
+            </div>
+            <div class="converter__line">
+                <input type="number"  class="converter--input"  placeholder="Liczba 2">
+                <select class="converter--option"  line="2">
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option selected>10</option>
+                    <option>12</option>
+                    <option>16</option>
+                </select>
+            </div>
+            <div class="converter__line">
+                <input type="button" value="Przelicz" class="converter--submit">
+            </div>
+            <div class="converter__line">
+                <input type="number" class="converter--output converter--input" placeholder="Wynik" readonly>
+                <select class="converter--option"  line="3">
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option selected>10</option>
+                    <option>12</option>
+                    <option>16</option>
+                </select>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="skrypt.js"></script>
+    </body>
+</html>
