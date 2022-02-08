@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$main-bg-clr:#fde8cd; 
+$main-clr:#433520;
+$menu-clr:#ebd4b6;
+$inputs-clr:#e9d6be8c;
+$inputs-border-clr:#025955;
+$buttons-hover-clr:#7086869f;
+$err-clr:#f0a08c;
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+*:not(textarea),*:not(input){
+    user-select: none;
+    
+}
+body {
+    text-align: center;
+    font-size: openSans;
+    background-color: $main-bg-clr;
+    color: $main-clr;
+}
+.language {
+    display: flex;
+    margin: 1% 9%;
+    &--text {
+        font-size: 1.5em;
+        width: 49%;
+        text-align: center;
+    }
+    &--button {
+        width: 2vw;
+        height: 2vw;
+        &:hover {
+            cursor: pointer;
+            opacity: 80%;
+        }
+    }
+}
+.text {
+    & > textarea {
+        background-color: $inputs-clr;
+        border: $inputs-border-clr solid 2px;
+        min-height: 15vw;
+        padding: 1vw;
+        font-size: 2em;
+        vertical-align: top;
+        resize: vertical;
+        width: 40vw;
+        margin: 1vw;
+    }
+}
+.translateBtn {
+    border: $inputs-border-clr solid 2px;
+    background-color: $inputs-clr;
+    margin: auto;
+    width: fit-content;
+    padding: 1vw;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 2vw;
+    &:hover {
+        background-color: $buttons-hover-clr;
+        cursor: pointer;
+    }
+}
+div.hamburger {
+    position: fixed;
+    top: 0vw;
+    right: 0vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: $menu-clr;
+    border-radius: 1vw 0 1vw 1vw;
+    & > div {
+        position: relative;
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        transition: transform 1s;
+        width: 3vw;
+        height: 0.5vw;
+        background-color: black;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 2vw;
+            height: 0.5vw;
+            background-color: black;
+            transform: rotate(-45deg) translate(-0.1vw, 0.1vw);
+            transform-origin: left;
+            display: block;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 2vw;
+            height: 0.5vw;
+            background-color: black;
+            transform: rotate(45deg) translate(-0.1vw, -0.1vw);
+            transform-origin: left;
+            display: block;
+        }
+    }
+}
+.menu {
+    transition: right 1s;
+    position: fixed;
+    top: 0px;
+    right: -40vw;
+    height: 100vh;
+    width: 40vw;
+    background-color: $menu-clr;
+    padding-top: 2vw;
+    border-radius: 2vw 0 0 2vw;
+    & > div {
+        margin: 0 12.5%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+
+        & > input {
+            margin: 0.5vw;
+            padding: 0.5vw;
+            background-color: $inputs-clr;
+            border: $inputs-border-clr 2px solid;
+            border-radius: 1vw;
+        }
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        & > input {
+            margin: 0.5vw;
+            padding: 0.5vw;
+            background-color: $inputs-clr;
+            border: $inputs-border-clr 2px solid;
+            border-radius: 1vw;
+        }
+    }
+    &__controls {
+        display: flex;
+        & > input {
+            width: 50%;
+            margin: 0.5vw;
+            padding: 0.5vw;
+            background-color: $inputs-clr;
+            border: $inputs-border-clr 2px solid;
+            border-radius: 1vw;
+            &:hover {
+                background-color: $buttons-hover-clr;
+                cursor: pointer;
+            }
+        }
+    }
+    &__submit{
+        &:hover {
+            background-color: $buttons-hover-clr;
+            cursor: pointer;
+        }
+    }
+    &__err{
+        color: $err-clr;
+    }
+}

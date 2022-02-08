@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #eeeeee;
+    width: 100%;
+    // align-content: center;
+    &__block {
+        padding: 1vw 3vw;
+        margin: 1vw auto;
+        background-color: #aaaaaa;
+        width: fit-content;
+        border-radius: 2vw;
+    }
+    &--img {
+        height: 10vw;
+    }
+    &--content {
+        float: right;
+        margin-left: 10vw;
+        & > div:nth-child(1) {
+            margin-right: 10vw;
+            font-size: 1.5em;
+        }
+        & > div:nth-child(2) {
+            text-align: right;
+        }
+    }
+}
+.content {
+    background-color: #bbbbbb;
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__block {
+        width: 15vw;
+        padding: 1vw;
+        font-size: 2em;
+        cursor: pointer;
+        background-color: #555555;
+        border-radius: 1vw;
+        margin: 1vw;
+    }
+}
+.article {
+    padding: 1vw;
+    &__block {
+        margin: 3vw;
+        &--title {
+            font-size: 3em;
+        }
+        &--content {
+            font-size: 1.5em;
+            & > img {
+                margin: 1vw;
+                width: 28vw;
+                height: 12.5vw;
+            }
+        }
+    }
+}
+.display {
+    display: flex;
+    & > div {
+        width: 50vw;
+    }
+}
+a {
+    text-decoration: none;
+    color: black;
+    &:visited {
+        color: black;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .content {
+        flex-direction: row;
+    }
+    .nav {
+        flex-direction: column;
+        width: 15%;
+        justify-content: flex-start;
+        margin: 5vw;
+    }
+    .article {
+        width: 85%;
+        &__block--content>img{
+            margin: 1vw;
+                width: 15vw;
+                height: 7.5vw;
+        }
+    }
+    .display {
+        & > div {
+            width: 25vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        &__block {
+            width: 90vw;
+            margin: 1vw 5vw;
+        }
+    }
+    .article__block {
+        &--title{
+            text-align: center;
+        }
+        &--content > img {
+            width: 80vw;
+            height: 40vw;
+            margin: 2vw 8vw;
+        }
+    }
+    .display {
+        text-align: center;
+        flex-direction: column;
+        & > div {
+            width: 100%;
+        }
+    }
+}

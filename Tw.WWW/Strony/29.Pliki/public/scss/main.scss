@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+$nav-bg: #58b890;
+$nav-font: #2b644c;
+$atlas-border: black;
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    height: 100vh;
+}
+.title {
+    color: $nav-font;
+    background-color: $nav-bg;
+    text-align: center;
+    font-size: 2em;
+    padding: 2vw;
+    height: 5%;
+}
+.nav {
+    color: $nav-font;
+    background-color: $nav-bg;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    & > div {
+        margin: 0 1vw;
+    }
+    &__add {
+        cursor: pointer;
+        & > img {
+            height: 100%;
+        }
+    }
+    &__search {
+        display: flex;
+        &--btn {
+            cursor: pointer;
+            & > img {
+                height: 100%;
+            }
+        }
+    }
+}
+.atlas {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    &__container {
+        display: flex;
+        margin: 2vw;
+        border: 2px $atlas-border solid;
+        border-radius: 1vw;
+        padding: 1vw;
+        &--animal {
+            width: 20vw;
+            height: 20vw;
+            text-align: center;
+            & > img {
+                width: 20vw;
+                height: 90%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &--description {
+            height: 20vw;
+            padding: 2vw;
+            overflow-y: auto;
+        }
+    }
+}
+
+.add {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    &__bg {
+        width: 100%;
+        height: 100%;
+        background-color: #706d6d9f;
+    }
+    &__block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 2vw;
+        padding: 1vw;
+        & > input,
+        > textarea {
+            margin: 1.5vw;
+        }
+        &--input {
+        }
+        &--btn {
+        }
+    }
+    &__remove{
+        cursor: pointer;
+        position: absolute;
+        top: 1vw;
+        right: 1vw;
+        font-size: 2em;
+    }
+}
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes hideBlock {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+}

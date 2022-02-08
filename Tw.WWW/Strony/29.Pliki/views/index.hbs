@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Atlas zwierząt</title>
+        <link rel="stylesheet" href="css/main.min.css" />
+    </head>
+    <body>
+        <div class="title">Atlas zwierząt</div>
+        <div class="nav">
+            <div class="nav__add"><img src="https://www.svgrepo.com/show/55490/plus.svg"></div>
+            <div class="nav__search">
+                <input class="nav__search--txt" type="text" />
+                <div class="nav__search--btn"><img src="https://www.svgrepo.com/show/42759/search-image.svg"></div>
+            </div>
+        </div>
+        <div class="atlas"></div>
+        <div class="add">
+            <div class="add__bg"></div>
+            <div class="add__block">
+                <input type="text" class="add__block--input" placeholder="name">
+                <textarea class="add__block--input" placeholder="description"></textarea>
+                <input type="file" class="add__block--input">
+                <input type="button" class="add__block--btn" value="Prześlij">
+            </div>
+            <div class="add__remove">X</div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/action.js"></script>
+    </body>
+</html>

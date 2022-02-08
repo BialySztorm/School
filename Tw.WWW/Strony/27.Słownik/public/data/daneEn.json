@@ -1,0 +1,9 @@
+{
+    "words": [
+        { "word": "data", "translate": ["dane", "informacje"] },
+        { "word": "first name", "translate": ["imię"] },
+        { "word": "teach", "translate": ["nauczać", "uczyć", "pouczać"] },
+        { "word": "name", "translate": ["imię", "nazwa"] },
+        { "word": "big", "translate": ["duży"] }
+    ]
+}

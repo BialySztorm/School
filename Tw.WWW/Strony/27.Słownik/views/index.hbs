@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Słownik</title>
+        <link rel="stylesheet" href="css/main.min.css" />
+    </head>
+    <body>
+        <div class="language">
+            <div class="language--text">Polski</div>
+            <div class="language--button">
+                <svg
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
+                    ></path>
+                </svg>
+            </div>
+            <div class="language--text">Angielski</div>
+        </div>
+        <div class="text">
+            <textarea class="text--input" placeholder="Wpisz tekst"></textarea>
+            <textarea class="text--output" placeholder="Tłumaczenie"></textarea>
+        </div>
+        <div class="translateBtn">Przetłumacz</div>
+        <div class="menu">
+            <div>
+                <div class="language">
+                    <div class="language--text">Polski</div>
+                    <div class="language--button">
+                        <svg
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div class="language--text">Angielski</div>
+                </div>
+                <div class="menu__inputs">
+                    <input
+                        type="text"
+                        class="text--input"
+                        placeholder="Wpisz słówko"
+                    />
+                    <input
+                        type="text"
+                        class="text--output"
+                        placeholder="Wpisz tłumaczenie"
+                    />
+                </div>
+                <div class="menu__controls">
+                    <input type="button" class="removeInput" value="-" />
+                    <input type="button" class="addInput" value="+" />
+                </div>
+                <input
+                    type="button"
+                    class="addTranslate menu__submit"
+                    value="Dodaj tłumaczenie"
+                />
+                <div class="menu__err"></div>
+            </div>
+        </div>
+        <div class="hamburger"><div></div></div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/resizeTxt.js"></script>
+        <script src="js/getData.js"></script>
+        <script src="js/addData.js"></script>
+        <script src="js/action.js" defer></script>
+    </body>
+</html>
