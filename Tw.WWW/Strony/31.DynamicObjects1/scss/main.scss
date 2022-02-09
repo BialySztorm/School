@@ -1,0 +1,21 @@
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    &__add{
+        border: 1px black solid;
+        border-radius: 1vw;
+        cursor: pointer;
+        padding: 2vw;
+    }
+}
+.container{
+    &--block{
+        border: 1px solid black;
+        border-radius: 1vw;
+        padding: 2vw;
+        margin: 1vw;
+        &>input{
+            font-size: 2em;
+        }
+    }
+}
