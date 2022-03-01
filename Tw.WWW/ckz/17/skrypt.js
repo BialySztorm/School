@@ -9,7 +9,7 @@ var min = null,
 
 function randNum() {
     for (i = 0; i < answers.length; i++) {
-        answers[i].innerHTML = Math.round(Math.random() * 100)
+        answers[i].innerHTML = Math.round(Math.random() * 10)
         for (j = 0; j < i; j++) {
             if (answers[i].innerHTML == answers[j].innerHTML) {
                 i--
