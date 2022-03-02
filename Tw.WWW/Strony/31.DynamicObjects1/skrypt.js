@@ -66,6 +66,19 @@ $(".buttons__add--after").click((data) => {
         }
     }
 })
+
+$(".buttons__add--before_del").click((data) => {
+    if(container.hasChildNodes()){
+        container.removeChild(container.firstElementChild)
+    }
+})
+
+$(".buttons__add--after_del").click((data) => {
+    if(container.hasChildNodes()){
+        container.removeChild(container.lastElementChild)
+    }
+})
+
 $(".buttons__add--delete").click((data) => {
     container.innerHTML = ""
 })
