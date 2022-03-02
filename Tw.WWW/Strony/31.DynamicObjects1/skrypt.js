@@ -3,7 +3,7 @@ const container = $(".container")[0]
 $(".buttons__add--start").click((data) => {
     var element = document.createElement("div"),
         count = container.childElementCount
-    element.innerHTML = "blok " + count
+    element.innerHTML = "<div>blok " + count+"</div>"
     element.classList.add("container--block")
     element.classList.add("container--block--"+count)
     container.prepend(element)
@@ -12,11 +12,15 @@ $(".buttons__add--start").click((data) => {
     select.name = "radioS"
     select.value = count
     element.append(select)
+
+    element.firstChild.onclick = function (){
+        element.remove()
+    }
 })
 $(".buttons__add--end").click((data) => {
     var element = document.createElement("div"),
         count = container.childElementCount
-    element.innerHTML = "blok " + count
+    element.innerHTML = "<div>blok " + count+"</div>"
     element.classList.add("container--block")
     element.classList.add("container--block--"+count)
     container.append(element)
@@ -25,6 +29,9 @@ $(".buttons__add--end").click((data) => {
     select.name = "radioS"
     select.value = count
     element.append(select)
+    element.firstChild.onclick = function (){
+        element.remove()
+    }
 })
 $(".buttons__add--before").click((data) => {
     var radios = document.getElementsByName("radioS")
@@ -33,7 +40,7 @@ $(".buttons__add--before").click((data) => {
         if (radios[i].checked) {
             var element = document.createElement("div"),
                 count = container.childElementCount
-            element.innerHTML = "blok " + count
+            element.innerHTML = "<div>blok " + count+"</div>"
             element.classList.add("container--block")
             element.classList.add("container--block--"+count)
             $(".container--block--"+[radios[i].value])[0].before(element)
@@ -42,6 +49,9 @@ $(".buttons__add--before").click((data) => {
             select.name = "radioS"
             select.value = count
             element.append(select)
+            element.firstChild.onclick = function (){
+                element.remove()
+            }
             break
         }
     }
@@ -53,7 +63,7 @@ $(".buttons__add--after").click((data) => {
         if (radios[i].checked) {
             var element = document.createElement("div"),
                 count = container.childElementCount
-            element.innerHTML = "blok " + count
+            element.innerHTML = "<div>blok " + count+"</div>"
             element.classList.add("container--block")
             element.classList.add("container--block--"+count)
             $(".container--block--"+[radios[i].value])[0].after(element)
@@ -62,6 +72,9 @@ $(".buttons__add--after").click((data) => {
             select.name = "radioS"
             select.value = count
             element.append(select)
+            element.firstChild.onclick = function (){
+                element.remove()
+            }
             break
         }
     }
