@@ -36,8 +36,18 @@ body{
             }
         }
     }
-    &--countdown{
-
+    &__counter{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &--element{
+            background-image: url('../img/Match_Body.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 40px;
+            margin:0.5vw;
+        }
     }
     &--btn{
         cursor: pointer;
@@ -45,5 +55,14 @@ body{
         border-radius: 1vw;
         padding: 1vw;
         margin: auto;
+    }
+}
+.rules{
+    position: fixed;
+    top:1vw;
+    left:1vw;
+    font-size: 0.7em;
+    &__content{
+        
     }
 }
