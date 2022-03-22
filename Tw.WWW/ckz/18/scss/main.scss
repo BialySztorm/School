@@ -1,0 +1,59 @@
+$main-clr: #d23be7;
+$sec-clr: #4355db;
+$empty: #a1a1a1ce;
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    background-color: $main-clr;
+    width: calc(calc(100vh+100vw) / 2);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &__row {
+        display: flex;
+        height: calc(100% / 13);
+        &--answers {
+            display: flex;
+            width: 80%;
+        }
+        &--hints {
+            display: flex;
+            width: 20%;
+            flex-wrap: wrap;
+        }
+    }
+}
+.answer {
+    background-color: $empty;
+    width: 22.5%;
+    height: 75%;
+    margin: 2.5% 5%;
+    border-radius: 100%;
+}
+.hint {
+    background-color: $empty;
+    width: 30%;
+    height: 36%;
+    margin: 3% 7%;
+    border-radius: 100%;
+}
+.controls {
+    text-align: center;
+    width: auto;
+    padding: 15% 10%;
+    &--btn {
+        font-size: 3em;
+        text-align: center;
+        padding: 0.5vw;
+        border: 2px solid black;
+        margin-top: 1vw;
+        &:hover {
+            background-color: #8a8787;
+            cursor: pointer;
+        }
+    }
+}

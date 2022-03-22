@@ -1,0 +1,59 @@
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    &__add{
+        border: 1px black solid;
+        border-radius: 1vw;
+        cursor: pointer;
+        padding: 2vw;
+    }
+}
+.container{
+    &--block{
+        border: 1px solid black;
+        border-radius: 1vw;
+        padding: 2vw;
+        margin: 1vw;
+        &>input{
+            font-size: 2em;
+        }
+    }
+}
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+  
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }

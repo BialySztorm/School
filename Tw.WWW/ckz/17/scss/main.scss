@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    background-color: #efd0ca;
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+    color: #5c7457;
+    margin: 2vw;
+}
+.banner {
+    height: 7vw;
+    margin: 1vw;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    &__img {
+        width: 8vw;
+        height: 8vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        display: none;
+        padding: 2vw;
+    }
+    &--good {
+        background-color: #5c745856;
+        & > div.banner__img {
+            background-image: url("../img/ok1.png");
+        }
+        & > div.banner__text {
+            display: none;
+        }
+    }
+    &--bad {
+        background-color: #ad483450;
+        & > div.banner__img {
+            background-image: url("../img/z1.png");
+        }
+        & > div.banner__text {
+            display: inline;
+        }
+    }
+}
+.question {
+    height: 4vw;
+    margin: 1vw;
+    text-align: center;
+    color: #979b8d;
+    font-size: 2.5em;
+}
+.answer {
+    display: flex;
+    justify-content: center;
+    &__content {
+        margin: 2vw;
+        background-color: #1d472fce;
+        width: 15vw;
+        height: 12vw;
+        padding: 2vw;
+        font-size: 3em;
+        text-align: center;
+        &:hover{
+            background-color: #163523ce;
+            cursor: pointer;
+        }
+        &--correct{
+            background-color: #4acc828c;
+            &:hover{
+                cursor: default;
+                background-color: #4acc828c;
+            }
+        }
+        &--hour{
+            width: 2px;
+            height: 25%;
+            border: 4px solid #b89935;
+            position:relative;
+            top:20%;
+            left: calc(50% - 4px);
+            transition: 2s transform;
+            transform-origin: bottom;
+            transform: rotate(20deg);
+            
+        }
+        &--min{
+            width: 2px;
+            height: 50%;
+            border: 4px solid #b89935;
+            position: relative;
+            left: calc(50% - 4px);
+            top:-38%;
+            transition: 2s transform;
+            transform-origin: bottom;
+            transform: rotate(270deg);
+        }
+    }
+}
+.score {
+    display: flex;
+    justify-content: center;
+    &__content {
+        width: 5vw;
+        height: 2vw;
+        margin: 2vw;
+        color: #c4c6be;
+        text-align: center;
+        font-size: 2em;
+        padding: 1vw;
+        &--avg {
+            background-color: #9f977f;
+        }
+        &--good {
+            background-color: #6f8c69;
+        }
+        &--bad {
+            background-color: #bc4e38;
+        }
+    }
+}
