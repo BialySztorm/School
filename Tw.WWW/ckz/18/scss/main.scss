@@ -1,6 +1,8 @@
-$main-clr: #d23be7;
-$sec-clr: #4355db;
-$empty: #a1a1a1ce;
+$main-clr: #26294a;
+$sec-clr: #01545a;
+$empty-clr: #a1a1a1ce;
+$correct-clr: #000000;
+$wrong-clr: #ffffff;
 
 body {
     margin: 0;
@@ -16,6 +18,15 @@ body {
     &__row {
         display: flex;
         height: calc(100% / 13);
+        box-sizing: border-box;
+        border: 1px black solid;
+        &--hidden{
+            background-color: $sec-clr;
+            margin: 1%;
+            &> *{
+                display: none;
+            }
+        }
         &--answers {
             display: flex;
             width: 80%;
@@ -28,14 +39,14 @@ body {
     }
 }
 .answer {
-    background-color: $empty;
+    background-color: $empty-clr;
     width: 22.5%;
     height: 75%;
     margin: 2.5% 5%;
     border-radius: 100%;
 }
 .hint {
-    background-color: $empty;
+    background-color: $empty-clr;
     width: 30%;
     height: 36%;
     margin: 3% 7%;
