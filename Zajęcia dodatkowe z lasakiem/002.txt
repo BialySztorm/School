@@ -1,0 +1,18 @@
+Algorytm Euklidesa
+Wejście:
+a, b - liczby naturalne, których NWD poszukujemy, a, b ∈ N.
+
+Wyjście:
+NWD liczb a i b
+
+Lista kroków:
+K01:Dopóki a ≠ 0 i b ≠ 0,
+    wykonuj krok K02
+
+K02:Jeśli a < b,
+    to b ← b % a
+    inaczej a ← a % b
+
+K03:Pisz b
+
+K04:Zakończ

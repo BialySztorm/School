@@ -1,0 +1,37 @@
+#Liczba odpowiedzi:
+3
+Quiz o rekinach
+Pytanie 1: Jaki gatunek jest najwiekszy?
+a - rekin tygrysi
+b - rekin mlot
+c - rekin wielorybi
+
+odpowiedz 1: 
+
+Pytanie 2: Gdzie zyja rekiny? 
+a - w wodach slonych
+b - w jeziorach
+c - w wodach slodkich 
+
+odpowiedz 2: 
+
+Pytanie 3: Co jedza rekiny?
+a - ludzi
+b - ryby i plankton
+c - slonie
+
+odpowiedz 3: 
+
+Pytanie 4: Ilu ludzi zabijaja ok. rekiny rocznie?
+a - 6
+b - 30
+c - 100
+
+odpowiedz 4: 
+
+Pytanie 5: Ile zebow maja zarlacze biale?
+a - 36
+b - 300
+c - 100
+
+odpowiedz 5: 
