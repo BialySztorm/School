@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+    background-color: #5a5a5a96;
+    &--text{
+    margin: 1vw;
+    }
+    &--btn{
+        cursor: pointer;
+        padding: 0.5vw;
+        margin: 0.5vw;
+        border: 1px black solid;
+        border-radius: 25%;
+    }
+}
+.container{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // padding: 0 calc(100vw - calc(4 * 20vh));
+}
+.card{
+    width: 13vw;
+    height: 13vw;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1vw;
+    margin: 1vw;
+    background-color: rgba(81, 102, 192, 0.7);
+    &--buffalo{
+        background-image: url("../img/buffalo.png");
+    }
+    &--elephant{
+        background-image: url("../img/elephant.png");
+    }
+    &--lion{
+        background-image: url("../img/lion.png");
+    }
+    &--mouse{
+        background-image: url("../img/mouse.png");
+    }
+    &--penguin{
+        background-image: url("../img/penguin.png");
+    }
+    &--shark{
+        background-image: url("../img/shark.png");
+    }
+    &--snake{
+        background-image: url("../img/snake.png");
+    }
+    &--turtle{
+        background-image: url("../img/turtle.png");
+    }
+    &--good{
+        background-color: rgba(49, 204, 49, 0.7);
+    }
+    &--bad{
+        background-color: rgba(226, 61, 61, 0.7);
+    }
+    &--hidden{
+        background-image: url("../img/eagle.png");
+        background-color: none;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    padding: 0.5vw;
+    background-color: #5a5a5a96;
+}
+a, a:hover, a:visited{
+    color: black;
+}
