@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html>
+<?php
+require "php/check.php";
+check(false);
+?>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/login.min.css">
-    <title>DDKANBAN</title>
+    <title>DDKANBAN - login</title>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-  
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdPjQ0fAAAAABMsRVAttNKfzaERhBoSzEBMWzEz"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Google reCAPTCHA CDN -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer>
+    </script>
 
 </head>
 
 <body>
     <div class="container">
-        <form id="newsletterForm" action="subscribe_newsletter_submit.php" method="post">
-            <div>
-                <div>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <input type="submit" value="submit">
-                </div>
-            </div>
-        </form>
-    </div>
-    <script>
-        $('#newsletterForm').submit(function(event) {
-            event.preventDefault();
-            var email = $('#email').val();
+        <h1>Login to your Kanban</h1>
 
-            grecaptcha.ready(function() {
-                grecaptcha.execute('6LdLk7EUAAAAAEWHuB2tabMmlxQ2-RRTLPHEGe9Y', {
-                    action: 'subscribe_newsletter'
-                }).then(function(token) {
-                    $('#newsletterForm').prepend('<input type="hidden" name="token" value="' + token + '">');
-                    $('#newsletterForm').prepend('<input type="hidden" name="action" value="subscribe_newsletter">');
-                    $('#newsletterForm').unbind('submit').submit();
-                });;
-            });
-        });
-    </script>
+        <!-- HTML Form -->
+        <form action="php/login.php" method="post">
+            <input type="text" name="login" id="login" placeholder="Enter Login" required>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
+
+            <!-- div to show reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6LcmZRsfAAAAACcESy0gPwZKzEFF1k8_TVhEt7gI"></div>
+            <button type="submit" name="submit_btn">
+                Submit
+            </button>
+        </form>
+        <div>Not registered yet? <a href="php/register.php">Register here!</a></div>
+    </div>
 </body>
 
 </html>
