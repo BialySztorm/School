@@ -38,7 +38,11 @@ function setArray() {
     current = ["", ""]
     isOn = false
     moves = 0
-    timerRef.innerHTML = "0min0s"
+    if(timer!=null){
+        clearInterval(timer)
+        timer = null
+    }
+    timerRef.innerHTML = "0min 0s"
     movesRef.innerHTML = "Moves: 0"
     scoreRef.innerHTML = "Score: 0"
     Types = [
@@ -74,7 +78,7 @@ function updateTimer(){
         timerS = 0
         timerM++
     }
-    timerRef.innerHTML = timerM+"min"+timerS+"s"
+    timerRef.innerHTML = timerM+"min "+timerS+"s"
 
 }
 
@@ -101,6 +105,7 @@ $(".card").click(function () {
                     current[1].addClass("card--good")
                     scoreRef.innerHTML = "Score: "+ (++score)
                     if(score>=8 && timer!=null){
+                        scoreRef.innerHTML = "Score: "+ (score*2/moves*100)
                         clearInterval(timer)
                         timer = null
                     }

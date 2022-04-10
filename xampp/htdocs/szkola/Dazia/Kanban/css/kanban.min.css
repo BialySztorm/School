@@ -1,2 +1,51 @@
-body{margin:0;height:100vh}.nav{display:-webkit-box;display:-ms-flexbox;display:flex}.nav--btn{width:25%;padding:1vw;text-align:center;font-size:2em}.nav--btn:hover{background-color:#e0e0e0;cursor:pointer}.nav--btn:nth-child(1){width:25%;padding:0vw}.nav--btn:nth-child(1)>select{padding:1vw;width:100%;font-size:1em}.nav--btn:nth-child(1)>select>option{background-color:#e0e0e0}.container{width:80%;margin:1vw 10%;height:80%}.container>iframe{width:100%;height:100%}iframe{border:none;border:2px solid black}@media only screen and (max-width: 700px){.container{width:95%;margin:1vw 2.5%}}
+body {
+    margin: 0;
+    height: 100vh;
+}
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.nav--btn {
+    width: 25%;
+    padding: 1vw;
+    text-align: center;
+    font-size: 2em;
+}
+.nav--btn:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.nav--btn:nth-child(1) {
+    width: 25%;
+    padding: 0vw;
+}
+.nav--btn:nth-child(1) > select {
+    padding: 1vw;
+    width: 100%;
+    font-size: 1em;
+}
+.nav--btn:nth-child(1) > select > option {
+    background-color: #e0e0e0;
+}
+.container {
+    width: 80%;
+    margin: 1vw 10%;
+    height: 80%;
+}
+.container > iframe {
+    width: 100%;
+    height: 100%;
+}
+iframe {
+    border: none;
+    border: 2px solid black;
+}
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 95%;
+        margin: 1vw 2.5%;
+    }
+}
 /*# sourceMappingURL=kanban.min.css.map */
