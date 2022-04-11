@@ -1,0 +1,50 @@
+body {
+    font-family: Raleway;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+img {
+    margin-left: 37%;
+    padding: 40px;
+}
+
+#wstep {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #c1c1c1;
+    opacity: 90%;
+    transition-duration: 0.4s;
+}
+
+#wstep:hover {
+    background-color: #ffffff;
+}
+
+#ogol {
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+hr {
+    height: 3px;
+    background-color: azure;
+}
+
+#charakterystyka {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 40px;
+
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    padding: 5px;
+    list-style-type: decimal;
+}

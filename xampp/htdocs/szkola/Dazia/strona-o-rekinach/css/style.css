@@ -1,0 +1,177 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+#tlo{
+width: 100%;
+height: 800px;
+object-fit: cover;
+}
+
+#naglowek {
+    color: cadetblue;
+    text-align: center;
+    font-family: Raleway;
+    position: fixed;
+    font-size: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+#nawigacja, table a {
+    font-size: 25px;
+    font-family: Raleway;
+    text-decoration: none;
+    color: azure;
+    padding-top: 55px;
+    transition-duration: 0.4s;
+
+}
+
+a:hover {
+    color: #008080;
+}
+
+/* hr {
+    background-color: paleturquoise;
+    width: 100%;
+    height: 10px;
+    border: 0px;
+} */
+
+#highlight {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    color: azure;
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: 300;
+    text-align: justify;
+}
+
+header {
+    font-size: 40px;
+    color: azure;
+}
+
+
+
+#image {
+    text-align: center;
+    /* object-fit: contain; */
+    background-image: url("../grafika/rekin_glebina.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    font-size: 40px;
+    font-family: fantasy;
+    color: azure;
+    text-align: center;
+}
+
+#tabela {
+    
+    vertical-align: middle;
+    font-family: Raleway;
+    font-weight: light;
+    color: azure;
+    font-size: 15px; 
+}
+
+#rekiny {
+    height: 250px;
+    width: 350px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#sharkweek {
+    width: 50%;
+    margin: auto;
+    padding-top: 3cm;
+}
+
+#form {
+width: 70%;
+height: 15cm;
+margin: auto;
+}
+
+input {
+  background-color: lightblue;
+  border: none;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+
+}
+
+#formularz {
+    font-family: Raleway;
+    font-size: 20px;
+    color: azure;
+    padding: 50px;
+}
+
+#button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border-width: 5px;
+    transition-duration: 0.4s;
+}
+
+#button:hover {
+    color: orange;
+    background-color: crimson;
+}
+
+textarea{
+    width: 95%;
+    height: 100%;
+    resize: vertical;
+}
+
+#formTable{
+    width: 100%;
+}
+p{
+    margin:0;
+}
+.star{
+    width: 10px;
+}
+.wyszukiwarka{
+    text-align: center;
+}
+td>div{
+    display: flex;
+    justify-content: end;
+}
+td>form{
+    float: right;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.nav--btn{
+    width: 25%;
+    padding: 1vw;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+body {
+    font-family: "Roboto";
+    color: aliceblue;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+.odp2 {
+    text-align: center;
+    border-color: azure;
+    border-width: 3px;
+    padding: 20px;
+}
